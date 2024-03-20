@@ -146,7 +146,7 @@ function showQuestion() {
     //document.getElementById("scorePercent").textContent = `Correct: ${(score/currentQuestionIndex) *100}`
     console.info("current Study Set Questions:", currentStudySetQuestions)
     if (currentQuestionIndex < currentStudySetQuestions.length) {
-        
+        document.getElementById("questionNumber").textContent = `Question: ${currentQuestionIndex}/${currentStudySetQuestions.length}`
         const currentQuestion = currentStudySetQuestions[currentQuestionIndex];
         const quizContainer = document.getElementById("quizContainer");
         const questionType = document.querySelector('input[name="questionType"]:checked').value;

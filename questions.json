@@ -321,10 +321,24 @@
             "questions": [
               {
                 "type": "range",
-                "multiple_choice_prompt": "Sea Level Power (RPM)",
-                "fill_blank_prompt": "Sea Level Power: _____ RPM (type: \"XX-XX\")",
-                "wrong_options": [],
-                "answer": "2100-2500"
+                "multiple_choice_prompt": "Regular wait between engine starts (sec)",
+                "fill_blank_prompt": "Regular wait between engine starts: _____ sed (type: \"XX\")",
+                "wrong_options": ["30","60","45","10","15","5","25","40","50","100"],
+                "answer": "20"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Long wait between engine starts (min)",
+                "fill_blank_prompt": "Long wait between engine starts: _____min (type: \"XX\")",
+                "wrong_options": ["1","2","5","3","7","30","60","45","20","15","5","25","40","50","100"],
+                "answer": "10"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Number Engine Start Attempts before long wait",
+                "fill_blank_prompt": "Number Engine Start Attempts before long wait: _____ (type: \"XX\")",
+                "wrong_options": ["1","2","4","5","10"],
+                "answer": "3"
               }
             ]
           }
