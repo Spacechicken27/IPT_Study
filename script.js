@@ -1,5 +1,3 @@
-const questions = []; // This should be replaced with the actual data from questions.json
-
 let studySets=[];
 let currentStudySetQuestions = [];
 let currentQuestionIndex = 0;
@@ -55,6 +53,18 @@ function displayCategories(categories){
     });
 }
 
+function restartQuiz(){
+    console.info("RESTARTING QUIZ.. HOPEFULLy");
+    currentQuestionIndex = 0;
+    score = 0;
+    totalQuestions = 0;
+    document.getElementById("score").textContent = `Score: ${score}`; // Assuming you have an element to display the score
+    document.getElementById("questionNumber").textContent = `Question: ${currentQuestionIndex}/${totalQuestions}`
+    document.getElementById("scorePercent").textContent = `Correct: ${(score/currentQuestionIndex) *100}`
+    document.getElementById("quizContainer").innerHTML = '';
+    startQuiz();
+}
+
 function startQuiz(){
     const studySetIndex = document.getElementById('studySetSelect').value;
     const questionType = document.querySelector('input[name="questionType"]:checked').value;
@@ -94,6 +104,19 @@ function startQuiz(){
     document.getElementById("score").textContent = `Score: ${score}`; // Assuming you have an element to display the score
     document.getElementById("questionNumber").textContent = `Question: ${currentQuestionIndex}/${totalQuestions}`
     document.getElementById("scorePercent").textContent = `Correct: ${(score/currentQuestionIndex) *100}`
+
+    if(document.getElementById("restartQuiz") == null){
+        startBtn = document.getElementById("startQuiz");
+        const restartButton = document.createElement("button");
+        restartButton.textContent = "Restart Quiz";
+        restartButton.id = "restartQuiz";
+        restartButton.className = startBtn.className; // Copy classes
+        restartButton.style.cssText = startBtn.style.cssText; // Copy styles
+        restartButton.style.backgroundColor = "#D8863B";
+        restartButton.addEventListener("click", restartQuiz);
+        startBtn.parentNode.replaceChild(restartButton, this);
+    }
+
     showQuestion();
 }
 
