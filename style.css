@@ -1,0 +1,97 @@
+/* General body styling for a cleaner look */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Centering the main app container and adding some padding & shadow for depth */
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Styles for quiz container and options */
+#quizContainer {
+    margin-top: 20px;
+}
+
+/* Option buttons styling */
+#quizContainer button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    background-color: #007bff;
+    transition: background-color 0.5s ease;
+}
+
+/* Correct option animation */
+.correct, .correct:focus {
+    background-color: #28a745 !important; /* Bootstrap success green */
+    color: white;
+    animation: correctAnimation 1s ease-out forwards;
+}
+
+.incorrect, .incorrect:focus {
+    background-color: #dc3545 !important; /* Bootstrap danger red */
+    color: white;
+    animation: incorrectAnimation 0.5s ease-in-out;
+}
+
+@keyframes correctAnimation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(76, 175, 80, 0);
+    }
+}
+@keyframes incorrectAnimation{
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+/* Background flash for incorrect answer */
+@keyframes flashRed {
+    from {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+.body-flash {
+    animation: flashRed 1s;
+}

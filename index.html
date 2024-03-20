@@ -5,9 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GFG</title>
+    <title>STUDY TIME</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World. Testing, pt.2</h1>
+    <div id="app">
+        <h1>Time to Studyyyyy</h1>
+        
+        <!-- Label for the study set selection dropdown -->
+        <label for="studySetSelect">Choose a Study Set:</label>
+        <select id="studySetSelect">
+            <!-- Options will be added dynamically by script.js -->
+        </select>
+
+        <!-- Container for categories with checkboxes -->
+        <div id="categoriesContainer">
+            <h3>Choose categories in set to test</h3>
+            <div id="categoryCheckboxes">
+                
+                <!-- Checkboxes will be added dynamically here -->
+            </div>
+        </div>
+
+        <!-- Radio buttons for question type -->
+        <div id="questionType">
+            <h3>Choose Quiz Format</h3>
+            <input type="radio" id="multipleChoice" name="questionType" value="multipleChoice" checked>
+            <label for="multipleChoice">Multiple Choice</label>
+            <input type="radio" id="fillInTheBlank" name="questionType" value="fillInTheBlank">
+            <label for="fillInTheBlank">Fill in the Blank</label>
+            <input type="radio" id="randomChoice" name="questionType" value="randomChoice"> <!-- not yet implemented-->
+            <label for="randomChoice">Random</label>
+        </div>
+        <div id="rangeMinMaxInfo">
+            <h3>Choose Question Type</h3>
+            <input type="radio" id="onlyRange" name="rangeMinMaxInfo" value="onlyRange" >
+            <label for="onlyRange">Only Ranges</label>
+            <input type="radio" id="onlyMinMax" name="rangeMinMaxInfo" value="onlyMinMax">
+            <label for="onlyMinMax">Only Min/Max</label>
+            <input type="radio" id="rangeWithMinMax" name="rangeMinMaxInfo" value="rangeWithMinMax"checked>
+            <label for="rangeWithMinMax">Both</label>
+        </div> 
+            
+        <div id="ExtraInfo">
+            <h3>Other Options</h3>
+            <input type="checkbox" id="randomizeQuestions" name="ExtraInfo" value="randomizeQuestions" checked>
+            <label for="randomizeQuestions">Randomize Question Order</label>
+            <!-- Button to start the quiz -->
+        </div>  
+        <button id="startQuiz">Start Quiz</button>
+
+        <!-- Display for score -->
+        <div id="score"></div>
+
+        <div id="questionNumber"></div>
+        <div id="scorePercent"></div>
+
+        <!-- Container for displaying the quiz questions and options -->
+        <div id="quizContainer">
+            <!-- Quiz content will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+/* style.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#quiz-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.option {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+#submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+/* Hide the actual checkbox inputs */
+#ExtraInfo input[type="checkbox"] {
+    display: none;
+}
+/* Adjusted style for the label to make each checkbox appear on its own line */
+#ExtraInfo label {
+    position: relative;
+    padding-left: 30px; /* Space for the custom checkbox */
+    cursor: pointer;
+    display: block; /* Change to block to make each label appear on its own line */
+    line-height: 25px; /* Adjust based on your design */
+    margin-bottom: 10px; /* Adds some space between the checkboxes */
+}
+
+/* Custom checkbox styling */
+#ExtraInfo label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Size of the custom checkbox */
+    height: 20px;
+    border: 2px solid #333; /* Border of the custom checkbox */
+    border-radius: 4px; /* Optional: for rounded corners */
+    background-color: #fff;
+}
+
+/* When the actual checkbox is checked, change the background of the custom checkbox */
+#ExtraInfo input[type="checkbox"]:checked + label:before {
+    background-color: #007bff; /* Change to your desired color */
+    border-color: #007bff; /* Optional: if you want the border color to match the background */
+}
+
+/* Optional: Adding a checkmark when the checkbox is checked. */
+#ExtraInfo input[type="checkbox"]:checked + label:after {
+    content: '\2713'; /* Unicode character for checkmark */
+    position: absolute;
+    left: 4px; /* Adjust these values based on your design */
+    top: 0;
+    color: #fff; /* Color of the checkmark */
+    font-size: 18px;
+}

@@ -1,0 +1,340 @@
+{
+    "studySets": [
+      {
+        "setName": "C172S Ops Limits",
+        "categories": [
+          {
+            "categoryName": "Airspeed",
+            "questions": [
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Low Airspeed Warning (KIAS)",
+                "fill_blank_prompt": "Low Airspeed Warning: _____ KIAS (type: \"XX-XX\")",
+                "wrong_options": ["22-42", "25-50", "15-35", "20-30", "16-32", "27-47", "29-45", "25-30", "11-25", "15-34", "27-43", "18-57", "18-43", "25-47", "16-40", "33-57", "18-34", "30-40", "28-43", "30-50"],
+                "answer": "20-40"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Flap Operating Range (KIAS)",
+                "fill_blank_prompt": "Flap Operating Range: _____ KIAS (type: \"XX-XX\")",
+                "wrong_options": ["47-77","39-78","43-95","44-101","34-95","40-83","39-105","33-87","43-96","46-95","43-83","32-105","30-102","50-82","44-102","46-73","34-88","40-92","46-70","45-74"],
+                "answer": "40-85"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Normal Operating Range (KIAS)",
+                "fill_blank_prompt": "Normal Operating Range: _____ KIAS (type: \"XX-XX\")",
+                "wrong_options": ["48-160","37-160","44-105","53-139","39-121","42-141","47-140","60-140","51-161","53-102","39-148","57-130","49-145","58-139","56-118","55-102","52-98","40-104","36-99","50-120"],
+                "answer": "48-129"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Caution Range (KIAS)",
+                "fill_blank_prompt": "Caution Range: _____ KIAS (type: \"XX-XX\")",
+                "wrong_options": ["157-203","144-173","158-174","131-156","158-185","101-164","111-157","101-194","102-128","129-158","112-166","150-178","134-177","149-175","155-175","131-162","151-196","97-142","116-158","130-130"],
+                "answer": "129-163"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Low Airspeed Warning Minimum (KIAS)",
+                "fill_blank_prompt": "Low Airspeed Warning Minimum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["10", "13", "15", "17", "19", "21", "22", "25", "28", "30", "40", "50", "43", "48", "70", "60"],
+                "answer": "20"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Flap Operating Range Minimum (KIAS)",
+                "fill_blank_prompt": "Flap Operating Range Minimum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["20","25","30","35","38","42","27","52","45","60","15","28","33","55","45"],
+                "answer": "40"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Normal Operating Range Minimum (KIAS)",
+                "fill_blank_prompt": "Normal Operating Range Minimum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["12","34","76","30","46","51","30","41","32","41","58","46","43","72","73","25","50","67","53","53"],
+                "answer": "48"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Caution Range Minimum (KIAS)",
+                "fill_blank_prompt": "Caution Range Minimum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["133","132","137","113","146","126","80","110","109","139","130","79","134","119","148","87","83","82","109","164"],
+                "answer": "129"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Low Airspeed Warning Maximum (KIAS)",
+                "fill_blank_prompt": "Low Airspeed Warning Maximum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["39","21","63","22","29","45","48","52","35","60","46","54","23","32","36","26","16","53","36","53"],
+                "answer": "40"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Flap Operating Range Maximum (KIAS)",
+                "fill_blank_prompt": "Flap Operating Range Maximum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["61","66","62","69","92","57","97","99","107","67","79","65","73","81","86","59","107","90","59","57"],
+                "answer": "85"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Normal Operating Range Maximum (KIAS)",
+                "fill_blank_prompt": "Normal Operating Range Maximum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["103","132","164","92","167","97","96","108","166","103","120","154","151","133","157","147","152","126","122","92"],
+                "answer": "129"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Caution Range Maximum (KIAS)",
+                "fill_blank_prompt": "Caution Range Maximum: _____ KIAS (type: \"XX\")",
+                "wrong_options": ["191","196","139","196","132","134","160","203","167","162","136","178","137","142","134","156","164","141","196","152"],
+                "answer": "163"
+              }
+              
+            ]
+          },
+          {
+            "categoryName": "Oil",
+            "questions": [
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Oil Pressure Range (PSI)",
+                "fill_blank_prompt": "Oil Pressure Range: _____ PSI (type: \"XX-XX\")",
+                "wrong_options": ["35-68","37-112","49-120","34-62","66-103","57-94","32-114","63-83","47-88","56-124","60-84","48-61","49-74","45-79","43-57","67-74","64-114","61-100","64-103","54-100"],
+                "answer": "50-90"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Oil Temperature Range (°F)",
+                "fill_blank_prompt": "Oil Temperature Range: _____ °F (type: \"XX-XX\")",
+                "wrong_options": ["98-206","89-275","107-205","103-262","118-243","96-229","110-277","88-201","116-229","94-279","91-292","106-249","82-254","115-263","83-283","92-258","110-259","99-261","92-254","97-280"],
+                "answer": "100-245"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Oil Pressure minimum (PSI)",
+                "fill_blank_prompt": "Oil Pressure minimum: _____ PSI (type: \"XX\")",
+                "wrong_options": ["72","27","26","43","54","37","43","69","28","61","56","50","45","35","75","59","63","38","31","43"],
+                "answer": "50"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Oil Temperature minimum (°F)",
+                "fill_blank_prompt": "Oil Temperature minimum: _____ °F (type: \"XX\")",
+                "wrong_options": ["92","95","104","115","92","94","116","118","86","105","106","96","107","90","85","82","106","108","92","110"],
+                "answer": "100"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Oil Pressure maximum (PSI)",
+                "fill_blank_prompt": "Oil Pressure maximum: _____ PSI (type: \"XX\")",
+                "wrong_options": ["76","108","114","81","83","76","96","112","85","79","115","81","75","102","77","114","104","110","100","95"],
+                "answer": "90"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Oil Temperature maximum (°F)",
+                "fill_blank_prompt": "Oil Temperature maximum: _____ °F (type: \"XX\")",
+                "wrong_options": ["310","257","162","292","230","215","190","174","250","272","308","240","238","260","163","186","230","254","170","312"],
+                "answer": "245"
+              }
+            ]
+          },
+          {
+            "categoryName": "Power",
+            "questions": [
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Sea Level Power (RPM)",
+                "fill_blank_prompt": "Sea Level Power: _____ RPM (type: \"XX-XX\")",
+                "wrong_options": ["2100-2700","2000-2500","3100-3500","2100-2800","2200-2500","1400-2900","1800-2300","1500-3200","1800-1600","2600-2600","2900-3300","1500-1900","2500-1900","2500-3500","2000-2700","2500-2700","2000-1800","2800-1800","2000-3400","2100-2600"],
+                "answer": "2100-2500"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "power at 5000ft (RPM)",
+                "fill_blank_prompt": "power at 5000ft: _____ RPM (type: \"XX-XX\")",
+                "wrong_options": ["2100-2400","2100-2500","2100-2700","2100-2800","1900-2600","2000-2600","2200-2600","2300-2600","2400-2600","1800-2900","2600-1500","2800-3400","1700-2400","1700-1700","1600-2300","1600-2200","2300-2200","2800-3100","2900-3200","1700-1800"],
+                "answer": "2100-2600"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "power at 10000ft (RPM)",
+                "fill_blank_prompt": "power at 10000ft: _____ RPM (type: \"XX-XX\")",
+                "wrong_options": ["2100-2400","2100-2500","2100-2600","2100-2800","1900-2700","2000-2700","2200-2700","2300-2700","2400-2700","1800-2900","2600-1500","2800-3400","1700-2400","1700-1700","1600-2300","1600-2200","2300-2200","2800-3100","2900-3200","1700-1800"],
+                "answer": "2100-2700"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Sea Level Power minimum (RPM)",
+                "fill_blank_prompt": "Sea Level Power minimum: _____ RPM (type: \"XX\")",
+                "wrong_options": ["2700","2600","3100","3100","2400","3000","1700","1600","1900","1700","2300","2400","3500","2100","1100","2800","2500","2000","2300","2200"],
+                "answer": "2100"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "power at 5000ft minimum (RPM)",
+                "fill_blank_prompt": "power at 5000ft minimum: _____ RPM (type: \"XX\")",
+                "wrong_options": ["2700","2600","3100","3100","2400","3000","1700","1600","1900","1700","2300","2400","3500","2100","1100","2800","2500","2000","2300","2200"],
+                "answer": "2100"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "power at 10000ft minimum (RPM)",
+                "fill_blank_prompt": "power at 10000ft minimum: _____ RPM (type: \"XX\")",
+                "wrong_options": ["2700","2600","3100","3100","2400","3000","1700","1600","1900","1700","2300","2400","3500","2100","1100","2800","2500","2000","2300","2200"],
+                "answer": "2100"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Sea Level Power maximum (RPM)",
+                "fill_blank_prompt": "Sea Level Power maximum: _____ RPM (type: \"XX\")",
+                "wrong_options": ["2700","2600","3100","3100","2400","3000","1700","1600","1900","1700","2300","2400","3500","2100","1100","2800","2100","2000","2300","2200"],
+                "answer": "2500"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "power at 5000ft maximum (RPM)",
+                "fill_blank_prompt": "power at 5000ft maximum: _____ RPM (type: \"XX\")",
+                "wrong_options": ["2700","2100","3100","3100","2400","3000","1700","1600","1900","1700","2300","2400","3500","2100","1100","2800","2500","2000","2300","2200"],
+                "answer": "2600"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "power at 10000ft maximum (RPM)",
+                "fill_blank_prompt": "power at 10000ft maximum: _____ RPM (type: \"XX\")",
+                "wrong_options": ["2100","2600","3100","3100","2400","3000","1700","1600","1900","1700","2300","2400","3500","2100","1100","2800","2500","2000","2300","2200"],
+                "answer": "2700"
+              }
+            ]
+          },
+          {
+            "categoryName": "weight",
+            "questions": [
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Ramp Weight (lbs)",
+                "fill_blank_prompt": "Ramp Weight: _____ lbs (type: \"XX-XX\")",
+                "wrong_options": ["2920","2821","2715","3091","2661","2629","3072","3132","2961","2900","2931","3029","2680","2840","2528","3188","2406","2403","2682","2612"],
+                "answer": "2558"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Takeoff Weight (lbs)",
+                "fill_blank_prompt": "Takeoff Weight: _____ lbs (type: \"XX\")",
+                "wrong_options": ["2920","2820","2710","3090","2660","2620","3070","3130","2960","2900","2930","3020","2680","2840","2500","3100","2400","2450","2650","2610"],
+                "answer": "2550"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Landing Weight (lbs)",
+                "fill_blank_prompt": "landing Weight: _____ lbs (type: \"XX\")",
+                "wrong_options": ["2920","2820","2710","3090","2660","2620","3070","3130","2960","2900","2930","3020","2680","2840","2500","3100","2400","2450","2650","2610"],
+                "answer": "2550"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Utility Category Weight (lbs)",
+                "fill_blank_prompt": "Utility Category Weight: _____ lbs (type: \"XX\")",
+                "wrong_options": ["2000","2100","2050","2150","2250","2300","2350","1950","1900","2320","3200","2550","2220","3230","700"],
+                "answer": "2200"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Baggage A Weight (lbs)",
+                "fill_blank_prompt": "Baggage A Weight: _____ lbs (type: \"XX\")",
+                "wrong_options": ["95","66","110","83","50","172","115","59","92","189","103","130","104","191","163","108","125","182","173","82"],
+                "answer": "120"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Baggage B Weight (lbs)",
+                "fill_blank_prompt": "Baggage B Weight: _____ lbs (type: \"XX\")",
+                "wrong_options": ["120","35","70","57","52","29","63","104","191","163","108","125","182","51","60","58","30","40","30"],
+                "answer": "50"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Total Baggage Weight (lbs)",
+                "fill_blank_prompt": "Total Baggage Weight: _____ lbs (type: \"XX\")",
+                "wrong_options": ["95","66","110","83","50","172","115","59","92","189","103","130","104","191","163","108","125","182","173","82"],
+                "answer": "120"
+              }
+            ]
+          },
+          {
+            "categoryName": "Load Factors",
+            "questions": [
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Normal category Load Factors (+/-g)",
+                "fill_blank_prompt": "Normal category Load Factors: _____ +/-g (type: \"X.X-X.X\")",
+                "wrong_options": ["4.0-1.62","3.9-1.87","3.1-1.56","2.9-1.11","4.4-1.76","3.8-1.91","3.2-1.87","3.8-1.19","3.9-1.83","4.5-1.51","4.9-1.85","3.3-1.31","4.3-1.61","3.3-1.38","3.9-1.42","4.6-1.49","3.3-1.31","2.6-1.97","2.7-1.20","3.5-1.07"],
+                "answer": "3.8-1.52"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Utility category Load Factors (+/-g)",
+                "fill_blank_prompt": "Utility category Load Factors: _____ +/-g (type: \"X.X-X.X\")",
+                "wrong_options": ["4.0-1.62","3.9-1.87","3.1-1.56","2.9-1.11","4.4-1.79","3.8-1.76","3.2-1.87","3.8-1.19","3.9-1.83","4.5-1.51","4.9-1.85","3.3-1.31","4.3-1.61","3.3-1.38","3.9-1.42","4.6-1.49","3.3-1.31","2.6-1.97","2.7-1.20","3.5-1.07"],
+                "answer": "4.4-1.76"
+              },
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Flaps FULL Load Factor (+g)",
+                "fill_blank_prompt": "Flaps FULL Load Factor: _____ +g (type: \"X.X\")",
+                "wrong_options": ["2.3","2.6","1.9","3.8","2.7","3.8","4.7","2.5","2.3","2.0","4.0","2.4","1.8","3.7","2.7","2.4","1.2","4.3","4.7","3.5"],
+                "answer": "3.0"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Normal category Load Factors Minimum (-g)",
+                "fill_blank_prompt": "Normal category Load Factors Minimum: _____ -g (type: \"X.X\")",
+                "wrong_options": ["1.63","1.25","1.45","1.64","1.07","1.46","1.31","1.06","1.08","1.67","1.78","1.77","1.76","1.32","1.57","1.19","1.94","1.15","1.75","2.11"],
+                "answer": "1.52"
+              },
+              {
+                "type": "min",
+                "multiple_choice_prompt": "Utility category Load Factors Minimum (-g)",
+                "fill_blank_prompt": "Utility category Load Factors Minimum: _____ -g (type: \"X.X\")",
+                "wrong_options": ["1.63","1.25","1.45","1.64","1.07","1.46","1.31","1.06","1.08","1.67","1.78","1.77","1.52","1.32","1.57","1.19","1.94","1.15","1.75","2.11"],
+                "answer": "1.76"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Normal category Load Factors Maximum (+g)",
+                "fill_blank_prompt": "Normal category Load Factors Maximum: _____ +g (type: \"X.X\")",
+                "wrong_options": ["2.3","2.6","1.9","3.8","2.7","3.8","4.7","2.5","2.3","2.0","4.0","2.4","1.8","3.7","2.7","2.4","1.2","4.3","4.7","3.5"],
+                "answer": "3.8"
+              },
+              {
+                "type": "max",
+                "multiple_choice_prompt": "Utility category Load Factors Maximum (+g)",
+                "fill_blank_prompt": "Utility category Load Factors Maximum: _____ +g (type: \"X.X\")",
+                "wrong_options": ["2.3","2.6","1.9","3.8","2.7","3.8","4.7","2.5","2.3","2.0","4.0","5.1","5.7","4.6","3.9","4.7","5.2","4.0","4.5","4.3","4.2","3.7"],
+                "answer": "4.4"
+              }
+            ]
+          },
+          {
+            "categoryName": "Engine Starter Limitations (Battery)",
+            "questions": [
+              {
+                "type": "range",
+                "multiple_choice_prompt": "Sea Level Power (RPM)",
+                "fill_blank_prompt": "Sea Level Power: _____ RPM (type: \"XX-XX\")",
+                "wrong_options": [],
+                "answer": "2100-2500"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "setName": "C172S BOLDFACE",
+        "categories": []
+      }
+    ]
+  }
+
+  
