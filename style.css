@@ -29,13 +29,66 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+
+
+/* Ensure inputs are also formatted correctly */
+input[type="checkbox"], input[type="radio"] {
+    margin-left: 20px; /* Indent checkboxes and radio buttons for better alignment */
+    /*display: block;*/
+}
+
+button:hover:not(#continueButton):not(#overrideButton) {
     opacity: 0.8;
 }
 
 /* Styles for quiz container and options */
 #quizContainer {
     margin-top: 20px;
+    
+}
+
+#matchingContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#statusBar {
+    display: none;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f4f4f4; /* Light grey background */
+    border-bottom: 2px solid #ccc; /* Adds a subtle line under the bar */
+    font-family: Arial, sans-serif; /* Ensures font consistency */
+}
+
+#statusBar > div {
+    /*display: none;*/
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White background for each status item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 30%; /* Each div takes up 30% of the statusBar */
+    text-align: center; /* Centers the text */
+}
+
+#score {
+    color: #4CAF50; /* Green color for score, feels positive */
+}
+
+#questionNumber {
+    color: #2196F3; /* Blue, indicative of ongoing progress */
+}
+
+#scorePercent {
+    color: #FF9800; /* Orange, stands out for percentages */
+}
+
+#studySetSelection {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 /* Option buttons styling */
@@ -94,4 +147,23 @@ button:hover {
 
 .body-flash {
     animation: flashRed 1s;
+}
+.list {
+    width: 45%;
+    border: 1px solid #ddd;
+    min-height: 200px;
+    list-style: none;
+    padding: 10px;
+  }
+  
+.list-item {
+padding: 6px 8px;
+border: 1px solid #ccc;
+margin-bottom: 5px;
+background-color: #007bff;
+cursor: grab;
+}
+
+.list-item.dragging {
+opacity: 0.5;
 }

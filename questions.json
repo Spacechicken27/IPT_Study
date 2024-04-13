@@ -346,7 +346,29 @@
       },
       {
         "setName": "C172S BOLDFACE",
-        "categories": []
+        "categories": [
+          {
+            "categoryName": "Engine Failure",
+            "questions": [
+              {
+                "type": "procedure",
+                "procedure_prompt": "ENGINE FAILURE DURING TAKEOFF ROLL",
+                "multiple_choice_prompt": "ENGINE FAILURE DURING TAKEOFF ROLL",
+                "fill_blank_prompt": ["1) THROTTLE CONTROL - _____  (type: \"CAPS\")","2) _____ - APPLY"],
+                "wrong_options": ["BRAKES - APPLY","BRAKES - RELEASE","AIRSPEED - 70 KIAS - FLAPS UP","AIRSPEED - 65 KIAS - FLAPS 10 DEGREES TO FULL","AIRSPEED - 68 KIAS","FUEL SHUTOFF VALVE - ON","FUEL SHUTOFF VALVE - OFF","FUEL SELECTOR VALVE - BOTH","FUEL SELECTOR VALVE - LEFT","FUEL SELECTOR VALVE - RIGHT","FUEL PUMP SWITCH - ON","FUEL PUMP SWITCH - OFF","MIXTURE CONTROL - RICH","MIXTURE CONTROL - IDLE CUTOFF","MAGNETOS SWITCH - START","MAGNETOS SWITCH - OFF","THROTTLE CONTROL - FULL","STBY BATT SWITCH - OFF","STBY BATT SWITCH - ON","MASTER SWITCH (ALT AND BAT) - OFF","MASTER SWITCH (ALT AND BAT) - ON","CABIN VENTS - CLOSED","CABIN VENTS - OPEN","CABIN HT AND CABIN AIR CONTROL KNOBS - OFF","CABIN HT AND CABIN AIR CONTROL KNOBS - ON","FIRE EXTINGUISHER - ACTIVATE"],
+                "answer": ["IDLE", "BRAKES"],
+                "procedure_answer": ["THROTTLE CONTROL - IDLE (PULL FULL OUT)","BRAKES - APPLY"]
+              }
+            ]
+          },
+          {
+            "categoryName": "Fire",
+            "questions": [
+              {
+              }
+            ]
+          }
+        ]
       }
     ]
   }
