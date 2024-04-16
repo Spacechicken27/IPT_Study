@@ -176,6 +176,7 @@ button:hover:not(#continueButton):not(#overrideButton) {
 .list-item {
 padding: 6px 8px;
 border: 1px solid #ccc;
+color: white;
 margin-bottom: 5px;
 background-color: #007bff;
 cursor: grab;

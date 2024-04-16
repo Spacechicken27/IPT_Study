@@ -345,7 +345,7 @@ function createProcedureQuestion(quizContainer,questionText,currentQuestion){
         rightList.querySelectorAll('li').forEach(item => {
             answerList.push(item.textContent);
         });
-        checkProcedureAnswer(answerList, currentQuestion,submitButton); // Assuming selectAnswer can handle array input
+        checkProcedureAnswer(answerList, currentQuestion,submitButton, leftList, rightList); // Assuming selectAnswer can handle array input
     };
     //submitButton.style.display = 'none';
     quizContainer.appendChild(submitButton);
@@ -445,7 +445,7 @@ function checkFillInTheBlankAnswer(user_answer, currentQuestion, element){
     //proceedToNextQuestion(1000)
 }
 
-function checkProcedureAnswer(user_answer, currentQuestion, element){
+function checkProcedureAnswer(user_answer, currentQuestion, element, leftList=null, rightList=null){
     correctAnswer = currentQuestion.procedure_answer;
     user_correct = false;
     element.onclick = () => {};
@@ -454,10 +454,51 @@ function checkProcedureAnswer(user_answer, currentQuestion, element){
         element.classList.add('correct');
         element.classList.remove('incorrect');
         user_correct = true;
+        items = rightList.querySelectorAll('li');
+        items.forEach((item, index)=> {
+            item.classList.add('correct');
+            listItem.draggable = false;
+        });
+        items = leftList.querySelectorAll('li');
+        items.forEach((item, index)=> {
+            listItem.draggable = false;
+        });
     } else {
-        qvalid = 'incorrect';
         element.classList.add('incorrect'); // Add class to trigger incorrect answer animation
         element.classList.remove('correct');
+        console.info("rightList:");
+        console.info(rightList);
+        items = rightList.querySelectorAll('li');
+        items.forEach((item, index)=> {
+            const text = item.textContent;
+            if(correctAnswer[index]===text){
+                item.classList.add('correct');
+            } else if (correctAnswer.includes(text)){
+                item.classList.add('incorrectSelected');
+            } else {
+                item.classList.add('incorrect');
+            }
+        });
+        items = leftList.querySelectorAll('li');
+        items.forEach((item, index)=>{
+            item.parentNode.removeChild(item);
+        })
+        LeftListTitle = document.createElement('li')
+        //LeftListTitle.classList.add('list-item');
+        LeftListTitle.textContent = '\\/ Correct Procedure \\/';
+        LeftListTitle.draggable = false;
+        LeftListTitle.id = `correct-procedure-item`;
+        leftList.appendChild(LeftListTitle);
+
+        correctAnswer.forEach((step, index)=>{
+            const listItem = document.createElement('li');
+            listItem.classList.add('list-item');
+            listItem.textContent = step;
+            listItem.draggable = false;
+            listItem.id = `step-item-${index}`;
+            leftList.appendChild(listItem);
+        });
+
         document.body.classList.add('body-flash'); // Add class to flash the background
         setTimeout(() => document.body.classList.remove('body-flash'), 1000); // Remove class after animation
     }
@@ -549,85 +590,6 @@ function createContinueButton(user_correct){
     }
 }
 
-// function selectAnswer(user_answer, element) {
-//     console.info("Select Answer Argument (index): ", user_answer);
-//     //currentQuestionIndex++;
-//     const currentQuestion = currentStudySetQuestions[currentQuestionIndex];
-//     const showAnswers = document.getElementById("showAnswers");
-//     correctAnswer = null;
-//     procedure = false;
-
-//     if(currentQuestion.procedure_answer){
-//         correctAnswer = currentQuestion.procedure_answer;
-//         procedure = true;
-//     } else {
-//         correctAnswer = currentQuestion.answer;
-//     }
-
-//     if(showAnswers.checked){
-//         var qvalid = 'correct';
-
-
-//         if ((procedure === false ? (user_answer === correctAnswer) : arraysEqual(user_answer, correctAnswer))) {
-//             score++;
-//             element.classList.add('correct');
-//             element.classList.remove('incorrect');
-//         } else {
-//             qvalid = 'incorrect';
-//             element.classList.add('incorrect'); // Add class to trigger incorrect answer animation
-//             element.classList.remove('correct');
-//             document.body.classList.add('body-flash'); // Add class to flash the background
-//             setTimeout(() => document.body.classList.remove('body-flash'), 1000); // Remove class after animation
-//         }
-//         document.querySelectorAll('button').forEach(button => {
-//             if (button.textContent === correctAnswer){
-//                 button.classList.add('correct');
-//                 button.classList.remove('incorrect');
-//             }
-//             if(button.closest('div').id == "quizContainer"){
-//                 button.onclick = null;
-//             }
-//         });
-//         if(document.getElementById("continueButton") == null){
-
-//             const overrideButton = document.createElement('button');
-//             overrideButton.id = 'overrideButton';
-//             overrideButton.textContent = 'Override';
-//             overrideButton.style.width = '50%';  // Set width to 50%
-//             //overrideButton.style.transition = 'background-color 0.3s ease'; // Smooth transition
-//             overrideButton.style.backgroundColor = '#8d541e';
-//             //overrideButton.onmouseover = () => { overrideButton.style.backgroundColor = '#9b5410'; }; // Darken on hover
-//             //overrideButton.onmouseout = () => { overrideButton.style.backgroundColor = '#a26933'; }; // Revert on mouse out
-//             overrideButton.onclick = () => {
-//                 // Add your function logic for what happens when the Override button is clicked
-//                 console.log("Override button clicked");
-//             };
-
-//             const continueButton = document.createElement('button');
-//             continueButton.id = 'continueButton';
-//             continueButton.textContent = 'Continue';
-//             continueButton.style.width = '50%';  // Set width to 50%
-//             continueButton.style.backgroundColor = '#32ad61';
-//             //continueButton.style.transition = 'background-color 0.3s ease'; // Smooth transition
-//             //continueButton.onmouseover = () => { continueButton.style.backgroundColor = '#00ab66'; }; // Darken on hover
-//             //continueButton.onmouseout = () => { continueButton.style.backgroundColor = '#00c06a'; }; // Revert on mouse out
-//             continueButton.onclick = () =>{
-//                 proceedToNextQuestion(100)
-//             }
-
-//             const buttonContainer = document.createElement('div');
-//             buttonContainer.style.display = 'flex';  // Use flexbox to align buttons in a row
-//             buttonContainer.appendChild(overrideButton);
-//             buttonContainer.appendChild(continueButton);
-//             quizContainer.appendChild(buttonContainer);
-//         }
-//         showAnswers.style.display = 'block';
-//     } else {
-        
-        
-//     }
-    
-// }
 
 function arraysEqual(array1, array2){
     if (array1.length !== array2.length) {
