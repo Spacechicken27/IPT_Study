@@ -109,6 +109,12 @@ button:hover:not(#continueButton):not(#overrideButton) {
     animation: correctAnimation 1s ease-out forwards;
 }
 
+.incorrectSelected, .incorrectSelected:focus{
+    background-color: #eed202 !important; /* Bootstrap safety yellow */
+    color: white;
+    animation: incorrectAnimation 0.5s ease-in-out;
+}
+
 .incorrect, .incorrect:focus {
     background-color: #dc3545 !important; /* Bootstrap danger red */
     color: white;
@@ -145,6 +151,17 @@ button:hover:not(#continueButton):not(#overrideButton) {
     }
 }
 
+@keyframes flashGreen {
+    from {
+        background-color: #4CAF50;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+.good-body-flash{
+    animation: flashGreen 1s;
+}
 .body-flash {
     animation: flashRed 1s;
 }
