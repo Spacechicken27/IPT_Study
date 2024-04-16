@@ -122,6 +122,10 @@ function startQuiz(){
     showQuestion();
 }
 
+function goHome(){
+
+}
+
 function randomizeElements(array){
     let shuffled = array.slice();
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -178,7 +182,7 @@ function createMultipleChoiceQuestion(quizContainer,questionText,currentQuestion
     options.forEach(option =>{
         const button = document.createElement('button');
         button.textContent = option;
-        button.onclick = () => checkMultipleChoiceAnswer(option, currentQuestion,button);
+        button.onclick = () => checkMultipleChoiceAnswer(option, currentQuestion,button, quizContainer);
         quizContainer.appendChild(button);
     });
 }
@@ -394,7 +398,7 @@ function proceedToNextQuestion(delay=1000){
     }, delay);
 }
 
-function checkMultipleChoiceAnswer(user_answer, currentQuestion, element){
+function checkMultipleChoiceAnswer(user_answer, currentQuestion, element, options){
     correctAnswer = currentQuestion.answer;
     user_correct = false;
     if (user_answer === correctAnswer) {
@@ -402,9 +406,28 @@ function checkMultipleChoiceAnswer(user_answer, currentQuestion, element){
         element.classList.add('correct');
         element.classList.remove('incorrect');
         user_correct = true;
+        items = options.querySelectorAll('button');
+        items.forEach(option =>{ 
+            if(option.id != "overrideButton" && option.id != "continueButton"){
+                option.onclick = () => {};
+            }
+            
+        })
     } else {
         element.classList.add('incorrect'); // Add class to trigger incorrect answer animation
         element.classList.remove('correct');
+        items = options.querySelectorAll('button');
+        items.forEach(option =>{ 
+            if(option.id != "overrideButton" && option.id != "continueButton"){
+                option.onclick = () => {};
+                if (option.textContent === correctAnswer){
+                    console.info("found correct one")
+                    option.classList.add('correct');
+                }
+            }
+            
+        });
+
         document.body.classList.add('body-flash'); // Add class to flash the background
         setTimeout(() => document.body.classList.remove('body-flash'), 1000); // Remove class after animation
     }
