@@ -405,91 +405,91 @@
                 "image": "/Images/VFR_Img/non-hard_surfaced.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Non-Hard Surfaced"
               },
               {
                 "image": "/Images/VFR_Img/seaplane_base.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Seaplane Base"
               },
               {
                 "image": "/Images/VFR_Img/hard_surfaced_1500-8069.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Non-Hard Surfaced", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
-                "answer": "Hard Surfaced 1500-8069'"
+                "wrong_options": ["Seaplane Base","Non-Hard Surfaced", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "answer": "Hard Surfaced 1500-8069 ft"
               },
               {
                 "image": "/Images/VFR_Img/hard_surfaced_grter_8069.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Non-Hard Surfaced", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
-                "answer": "Hard Surfaced > 8069'"
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Non-Hard Surfaced", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "answer": "Hard Surfaced > 8069 ft"
               },
               {
                 "image": "/Images/VFR_Img/vor_vor-dme_dme_vortac.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "Non-Hard Surfaced", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "Non-Hard Surfaced", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "VOR | VOR-DME | DME | VORTAC"
               },
               {
                 "image": "/Images/VFR_Img/private.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Non-Hard Surfaced","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Non-Hard Surfaced","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Private"
               },
               {
                 "image": "/Images/VFR_Img/non-hard_surfaced_military.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surfaced","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surfaced","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Non-Hard Surface Military"
               },
               {
                 "image": "/Images/VFR_Img/Heliport.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Non-Hard Surfaced","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Non-Hard Surfaced","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Heliport"
               },
               {
                 "image": "/Images/VFR_Img/unverified.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Non-Hard Surfaced","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Non-Hard Surfaced","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Unverified"
               },
               {
                 "image": "/Images/VFR_Img/abandoned.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Non-Hard Surfaced","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Non-Hard Surfaced","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
                 "answer": "Abandoned"
               },
               {
                 "image": "/Images/VFR_Img/ultralight_flight_park.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Non-Hard Surfaced","Fuel Availability","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Non-Hard Surfaced","Fuel Availability","Rotating Beacon"],
                 "answer": "Ultralight Flight Park"
               },
               {
                 "image": "/Images/VFR_Img/fuel_availability.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Non-Hard Surfaced","Rotating Beacon"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Non-Hard Surfaced","Rotating Beacon"],
                 "answer": "Fuel Availability"
               },
               {
                 "image": "/Images/VFR_Img/rotating_beacon.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069'", "Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Non-Hard Surfaced","Fuel Availability"],
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Non-Hard Surfaced","Fuel Availability"],
                 "answer": "Rotating Beacon"
               }
             ]
@@ -501,140 +501,140 @@
                 "image": "/Images/VFR_Img/class_b_airspace.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Class B Airspace"
               },
               {
                 "image": "/Images/VFR_Img/class_c_airspace.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Class C Airspace"
               },
               {
                 "image": "/Images/VFR_Img/class_d_airspace.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class B Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class B Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Class D Airspace"
               },
               {
                 "image": "/Images/VFR_Img/class_d_airspace_ceiling.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class B Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class B Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Class D Airspace Ceiling"
               },
               {
                 "image": "/Images/VFR_Img/class_e_airspace_surface.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class B Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class B Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Class E Surface Airspace"
               },
               {
                 "image": "/Images/VFR_Img/class_e_airspace_700.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace", "Class C Airspace", "Class D Airspace", "Class E Surface Airspace", "Class E Airspace floor > 1200'", "Class E Floor Differentiator", "Low Altitude Airway", "Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)", "Class B Airspace"],
-                "answer": "Class E Airspace floor > 700'"
+                "wrong_options": ["Class A Airspace", "Class C Airspace", "Class D Airspace", "Class E Surface Airspace", "Class E Airspace floor > 1200 ft", "Class E Floor Differentiator", "Low Altitude Airway", "Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)", "Class B Airspace"],
+                "answer": "Class E Airspace floor > 700 ft"
               },
               {
                 "image": "/Images/VFR_Img/class_e_airspace_1200.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class B Airspace","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
-                "answer": "Class E Airspace floor > 1200'"
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class B Airspace","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "answer": "Class E Airspace floor > 1200 ft"
               },
               {
                 "image": "/Images/VFR_Img/class_e_floor_differentiator.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class B Airspace","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class B Airspace","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Class E Floor Differentiator"
               },
               {
                 "image": "/Images/VFR_Img/low_altitude_airway.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Class B Airspace","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Class B Airspace","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Low Altitude Airway"
               },
               {
                 "image": "/Images/VFR_Img/mileage_btwn_navaids.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Mileage between NAVAIDs on Airway"
               },
               {
                 "image": "/Images/VFR_Img/rnav_waypoint.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer":  "RNAV Waypoint"
               },
               {
                 "image": "/Images/VFR_Img/prohibited_restricted_warning_area.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Prohibited, Restriced, and Warning Areas"
               },
               {
                 "image": "/Images/VFR_Img/alert_area_and_moa.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer": "Alert Area / Military Operations Area (MOA)"
               },
               {
                 "image": "/Images/VFR_Img/special_airport_traffic_area.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer":  "Special Airport Traffic Area"
               },
               {
                 "image": "/Images/VFR_Img/national_defense_airspace_tfr.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer":  "National Defense Airspace TFR"
               },
               {
                 "image": "/Images/VFR_Img/air_defense_indentification_zone.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR","Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR","Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer":  "Air Defense Identification Zone (ADIZ)"
               },
               {
                 "image": "/Images/VFR_Img/mode_c_veil.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)","National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)","National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer":  "Mode C Veil"
               },
               {
                 "image": "/Images/VFR_Img/national_security_area.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
                 "answer":  "National Security Area"
               },
               {
                 "image": "/Images/VFR_Img/terminal_radar_service_area.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Military Training Route (MTR)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Military Training Route (MTR)"],
                 "answer":  "Terminal Radar Service Area (TRSA)"
               },
               {
                 "image": "/Images/VFR_Img/military_training_route.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Airspace & Air Traffic Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700'", "Class E Airspace floor > 1200'","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft", "Class E Airspace floor > 1200 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas","Alert Area / Military Operations Area (MOA)", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)"],
                 "answer": "Military Training Route (MTR)"
               }
             ]
@@ -756,70 +756,70 @@
                 "image": "/Images/VFR_Img/obstruction_1000.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": [ "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
-                "answer":"> 1000' Obstruction"
+                "wrong_options": [ "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "answer":"> 1000 ft Obstruction"
               },
               {
                 "image": "/Images/VFR_Img/obstruction_200_1000.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
-                "answer":"Obstruction > 200' and < 1000'"
+                "wrong_options": ["> 1000 ft Obstruction", "Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "answer":"Obstruction > 200 ft and < 1000 ft"
               },
               {
                 "image": "/Images/VFR_Img/wind_turbine.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
                 "answer":"Wind Turbine"
               },
               {
                 "image": "/Images/VFR_Img/group_obstruction.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
                 "answer":"Group Obstruction"
               },
               {
                 "image": "/Images/VFR_Img/high_intesity_lights.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
                 "answer":"Obstruction with High-Intensity Lights"
               },
               {
                 "image": "/Images/VFR_Img/wing_turbine_farm.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights", "Power Transmission Line", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
                 "answer":"Wind Turbine Farm"
               },
               {
                 "image": "/Images/VFR_Img/power_transmission_line.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Aerial Cable", "Lookout Tower", "Mountain Pass"],
                 "answer": "Power Transmission Line"
               },
               {
                 "image": "/Images/VFR_Img/aerial_cable.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Lookout Tower", "Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Lookout Tower", "Mountain Pass"],
                 "answer": "Aerial Cable"
               },
               {
                 "image": "/Images/VFR_Img/lookout_tower.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable","Mountain Pass"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable","Mountain Pass"],
                 "answer": "Lookout Tower"
               },
               {
                 "image": "/Images/VFR_Img/mountain_pass.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Obstruction Symbols -- What does this symbol indicate?",
-                "wrong_options": ["> 1000' Obstruction", "Obstruction > 200' and < 1000'","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower"],
+                "wrong_options": ["> 1000 ft Obstruction", "Obstruction > 200 ft and < 1000 ft","Wind Turbine","Group Obstruction","Obstruction with High-Intensity Lights","Wind Turbine Farm", "Power Transmission Line", "Aerial Cable", "Lookout Tower"],
                 "answer": "Mountain Pass"
               }
             ]
@@ -1051,8 +1051,8 @@
                 "image": "/Images/VFR_Img/hamilton_municipal_mnz.png",
                 "type": "multiple_response",
                 "multiple_choice_prompt": "Select all that apply to MNZ?",
-                "wrong_options": ["Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area","VFR Waypoint","Seaplane Base","Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park"],
-                "answer": ["Glider Operations","Fuel Availability","Rotating Beacon","Hard Surfaced 1500-8069'"]
+                "wrong_options": ["Hang Glider Activity","Ultralight Activity","Space Launch Activity Area","Unmanned Aircraft Activity","Parachute Jumping Area","VFR Waypoint","Seaplane Base","Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park"],
+                "answer": ["Glider Operations","Fuel Availability","Rotating Beacon","Hard Surfaced 1500-8069 ft"]
               },
               {
                 "image": "/Images/VFR_Img/hamilton_municipal_mnz.png",
@@ -1065,8 +1065,8 @@
                 "image": "/Images/VFR_Img/hamilton_municipal_mnz.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What is the runway elevation of MNZ",
-                "wrong_options": ["1227'","5000'","1185'"],
-                "answer": "1305'"
+                "wrong_options": ["1227 ft","5000 ft","1185 ft"],
+                "answer": "1305 ft"
               },
               {
                 "image": "/Images/VFR_Img/hamilton_municipal_mnz.png",
@@ -1086,22 +1086,22 @@
                 "image": "/Images/VFR_Img/hamilton_municipal_mnz.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What is the longest runway length at MNZ",
-                "wrong_options": ["500'","50000'","1227'","1185'","1305'"],
-                "answer": "5000'"
+                "wrong_options": ["500 ft","50000 ft","1227 ft","1185 ft","1305 ft"],
+                "answer": "5000 ft"
               },
               {
                 "image": "/Images/VFR_Img/hamilton_municipal_mnz.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What airspce is at MNZ",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 1200'"],
-                "answer": "Class E Airspace floor > 700'"
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 1200 ft"],
+                "answer": "Class E Airspace floor > 700 ft"
               },
               {
                 "image": "/Images/VFR_Img/georgetown_exec_gtu.png",
                 "type": "multiple_response",
                 "multiple_choice_prompt": "Select all that apply to GTU?",
-                "wrong_options": ["Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area","Seaplane Base","Hard Surfaced > 8069'", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park"],
-                "answer": ["Fuel Availability","Rotating Beacon","Hard Surfaced 1500-8069'","VFR Waypoint"]
+                "wrong_options": ["Glider Operations","Hang Glider Activity","Ultralight Activity","Space Launch Activity Area","Unmanned Aircraft Activity","Parachute Jumping Area","Seaplane Base","Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park"],
+                "answer": ["Fuel Availability","Rotating Beacon","Hard Surfaced 1500-8069 ft","VFR Waypoint"]
               },
               {
                 "image": "/Images/VFR_Img/georgetown_exec_gtu.png",
@@ -1114,8 +1114,8 @@
                 "image": "/Images/VFR_Img/georgetown_exec_gtu.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What is the runway elevation of GTU",
-                "wrong_options": ["123'","7900'","118.6'","120.2'","500'","5000'","50000'"],
-                "answer": "790'"
+                "wrong_options": ["123 ft","7900 ft","118.6 ft","120.2 ft","500 ft","5000 ft","50000 ft"],
+                "answer": "790 ft"
               },
               {
                 "image": "/Images/VFR_Img/georgetown_exec_gtu.png",
@@ -1128,15 +1128,78 @@
                 "image": "/Images/VFR_Img/georgetown_exec_gtu.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What is the longest runway length at GTU",
-                "wrong_options": ["123'","7900'","1186'","1202'","500'","5000'","50000'"],
-                "answer": "5000'"
+                "wrong_options": ["123 ft","7900 ft","1186 ft","1202 ft","500 ft","5000 ft","50000 ft"],
+                "answer": "5000 ft"
               },
               {
                 "image": "/Images/VFR_Img/georgetown_exec_gtu.png",
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What airspce is at GTU",
-                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class E Airspace floor > 700'","Class E Surface Airspace","Class E Airspace floor > 1200'"],
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class C Airspace","Class E Airspace floor > 700 ft","Class E Surface Airspace","Class E Airspace floor > 1200 ft"],
                 "answer": "Class D Airspace"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all that apply to MAF?",
+                "wrong_options": ["Hard Surfaced 1500-8069 ft","VFR Waypoint","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area","Seaplane Base", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park"],
+                "answer": ["Fuel Availability","Rotating Beacon","Hard Surfaced > 8069 ft","Space Launch Activity Area"]
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all applicable to MAF?",
+                "wrong_options": ["Right Pattern","Automated Surface Weather Observing Systems","Airport of Entry","Special Air Traffic Rules & Patterns","Right Pattern W/ Special Conditions","Flight Service Station","Lighting in operation Sunset - Sunrise","Special VFR Flight Prohibited","Automatic Flight Information Service","Aeronautical Advisory Station","Location Identifier", "ICAO Location Identifier","Weather Camera"],
+                "answer": ["Lighting Limitaions Exist","Common Traffic Advisory Frequency","Automatic Terminal Information Service","Control Tower","Part Time Operation"]
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the runway elevation of MAF",
+                "wrong_options": ["2000 ft","9500 ft","950 ft","126.8 ft","1235.9 ft","287 ft","5000 ft"],
+                "answer": "2872 ft"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the Control Tower Frequency at MAF",
+                "wrong_options": ["118.6","122.7","118.525","1305.0","122.9","123.050"],
+                "answer": "118.7"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the longest runway length at MAF",
+                "wrong_options": ["2872 ft","7900 ft","1186 ft","1202 ft","500 ft","5000 ft","50000 ft", "5000 ft"],
+                "answer": "9500 ft"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What airspce is at MAF",
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class D Airspace","Class E Airspace floor > 700 ft","Class E Surface Airspace","Class E Airspace floor > 1200 ft"],
+                "answer": "Class C Airspace"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the highest the airspace extends above MAF (AGL)",
+                "wrong_options": ["4600 ft","4200 ft","69000 ft","690 ft","46000 ft","4400 ft","50000 ft", "5000 ft"],
+                "answer": "6900 ft"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What airspace is MDD in?",
+                "wrong_options": ["Class A Airspace","Class B Airspace","Class D Airspace","Class C Airspace","Class E Surface Airspace","Class E Airspace floor > 1200 ft"],
+                "answer": "Class E Airspace floor > 700 ft"
+              },
+              {
+                "image": "/Images/VFR_Img/midland_park.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "How many ft can you climb directly up at MDD before hitting MAF Airspace?",
+                "wrong_options": ["1695 ft","1395 ft","1795 ft","4095 ft","4400 ft","4200 ft","4600 ft"],
+                "answer": "1595 ft"
               }
             ]
           },
@@ -1144,11 +1207,39 @@
             "categoryName": "Sectional Examples",
             "questions": [
               {
-                "image": "/Images/VFR_Img/heliport.png",
+                "image": "/Images/VFR_Img/ross_planes.png",
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all that are in this image?",
+                "wrong_options": ["> 1000 ft Obstruction","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area", "Stadium","Marine Light","Space Launch Activity Area","Obstruction with High-Intensity Lights",  "Aerial Cable", "Lookout Tower", "Mountain Pass","Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
+                "answer":["Obstruction > 200 ft and < 1000 ft","Wind Turbine","Wind Turbine Farm","Group Obstruction","Power Transmission Line", "Class E Airspace floor > 1200 ft","Alert Area / Military Operations Area (MOA)","Isogonic Line","VFR Waypoint"]
+              },
+              {
+                "image": "/Images/VFR_Img/jl_bar_ranch.png",
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all in this image?",
+                "wrong_options": ["> 1000 ft Obstruction","Wind Turbine","Wind Turbine Farm", "VFR Waypoint","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area", "Stadium","Marine Light","Space Launch Activity Area","Obstruction with High-Intensity Lights",  "Aerial Cable", "Lookout Tower", "Mountain Pass","Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Floor Differentiator","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)"],
+                "answer":["Obstruction > 200 ft and < 1000 ft","Group Obstruction","Power Transmission Line","Class E Airspace floor > 1200 ft","Alert Area / Military Operations Area (MOA)","Isogonic Line","Class E Airspace floor > 700 ft","Low Altitude Airway", "Military Training Route (MTR)"]
+              },
+              {
+                "image": "/Images/VFR_Img/ross_planes.png",
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "What does this symbol indicate?",
-                "wrong_options": ["Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon",""],
-                "answer": "Heliport"
+                "multiple_choice_prompt": "What is the highest elevation in the surrounding quadrant of this picture?",
+                "wrong_options": ["2471 ft","2074 ft","2192 ft","2529 ft"],
+                "answer": "2800 ft"
+              },
+              {
+                "image": "/Images/VFR_Img/ross_planes.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the highest obstruction MSL in this area?",
+                "wrong_options": ["2471 ft","2074 ft","2192 ft","2529 ft","2800 ft"],
+                "answer": "2676 ft"
+              },
+              {
+                "image": "/Images/VFR_Img/hot_springs.png",
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all in this image?",
+                "wrong_options": ["Group Obstruction","Class E Airspace floor > 700 ft","Alert Area / Military Operations Area (MOA)","> 1000 ft Obstruction","Wind Turbine","Wind Turbine Farm", "VFR Waypoint","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area", "Stadium","Marine Light","Space Launch Activity Area","Obstruction with High-Intensity Lights",  "Aerial Cable", "Lookout Tower", "Mountain Pass","Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Floor Differentiator","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR",  "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)"],
+                "answer":["Obstruction > 200 ft and < 1000 ft","Power Transmission Line","Class E Airspace floor > 1200 ft","Isogonic Line","Low Altitude Airway", "Military Training Route (MTR)","Air Defense Identification Zone (ADIZ)"]
               }
             ]
           }
