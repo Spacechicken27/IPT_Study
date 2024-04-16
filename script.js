@@ -82,20 +82,6 @@ function startQuiz(){
             category.questions.forEach(question => {
                 currentStudySetQuestions.push(question);
                 totalQuestions++;
-                // if (document.getElementById("rangeWithMinMax").checked){
-                //     console.info("Chose range with max and min")
-                //     currentStudySetQuestions.push(question);
-                //     totalQuestions++;
-                // } else if(document.getElementById("onlyRange").checked && question.type === "range"){
-                //     console.info("Question is range question")
-                    
-                // } else if (document.getElementById("onlyMinMax").checked && (question.type === "min" || question.type === "max")){
-                //     console.info("quesiton is min/max question")
-                //     currentStudySetQuestions.push(question);
-                //     totalQuestions++;
-                // }
-                
-                // //}
             });
         }
     });
@@ -107,23 +93,37 @@ function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
     updateScore();
-    if(document.getElementById("home") == null){
-        startBtn = document.getElementById("startQuiz");
-        const restartButton = document.createElement("button");
-        restartButton.textContent = "Home";
-        restartButton.id = "homeButton";
-        restartButton.className = startBtn.className; // Copy classes
-        restartButton.style.cssText = startBtn.style.cssText; // Copy styles
-        restartButton.style.backgroundColor = "#D8863B";
-        restartButton.addEventListener("click", restartQuiz);
-        startBtn.parentNode.replaceChild(restartButton, this);
-    }
+
+    startBtn = document.getElementById("startQuiz");
+    startBtn.style.display='none';
+    homeBtn = document.getElementById("homeBtn");
+    homeBtn.style.display='block';
+    homeBtn.addEventListener('click', goHome);
 
     showQuestion();
 }
 
 function goHome(){
+    console.info("going home");
+    document.getElementById('studySetSelection').style.display = 'block';
+    document.getElementById('categoriesContainer').style.display = 'block';
+    document.getElementById('questionType').style.display = 'block';
+    document.getElementById('ExtraInfo').style.display = 'block';
+    document.getElementById('statusBar').style.display = 'none';
+    quizContainer = document.getElementById('quizContainer');
+    quizContainer.innerHTML = '';
+    //studySets=[];
+    currentStudySetQuestions = [];
+    currentQuestionIndex = 0;
+    score = 0;
+    totalQuestions = 0;
 
+    
+    homeBtn = document.getElementById("homeBtn");
+    startBtn = document.getElementById("startQuiz");
+    homeBtn.style.display='none';
+    startBtn.style.display='block';
+    
 }
 
 function randomizeElements(array){
