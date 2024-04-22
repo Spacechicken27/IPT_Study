@@ -703,10 +703,10 @@ function handleTouchMove(event) {
     }
     const touch = event.touches[0];
     draggableItem.style.position = 'fixed'; // Use 'fixed' for position to work properly on mobile
-    draggableItem.style.left = '${touch.clientX}px';
-    draggableItem.style.top = '${touch.clientY}px';
-    //draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
-    //draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
+    //draggableItem.style.left = '${touch.clientX}px';
+    //draggableItem.style.top = '${touch.clientY}px';
+    draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
+    draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
 }
 
 function findClosestList(touchX, touchY) {
