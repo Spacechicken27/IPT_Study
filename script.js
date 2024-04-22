@@ -134,7 +134,7 @@ function randomizeElements(array){
     }
     return shuffled;
 }
-// Function to get random elements from the array
+
 function getRandomElements(array, count) {
     // Shuffle array using Fisher-Yates algorithm\
     console.info("Array To Get Rand Elements: ", array)
@@ -150,7 +150,6 @@ function getRandomElements(array, count) {
     // Return the first `count` elements of the shuffled array
     return shuffled.slice(0, count);
 }
-
 
 function createMultipleChoiceQuestion(quizContainer,questionText,currentQuestion){
     questionText.textContent = currentQuestion.multiple_choice_prompt;
@@ -304,6 +303,19 @@ function createProcedureQuestion(quizContainer,questionText,currentQuestion){
     matchingContainer.appendChild(rightList);
 
     document.querySelectorAll('.list-item').forEach(item => {
+        item.addEventListener('dragstart', handleDragStart);
+        item.addEventListener('dragend', handleDragEnd);
+        item.addEventListener('touchstart', handleTouchStart, { passive: false });
+        item.addEventListener('touchmove', handleTouchMove, { passive: false });
+        item.addEventListener('touchend', handleTouchEnd, { passive: false });
+    });
+
+    document.querySelectorAll('.list').forEach(list => {
+        list.addEventListener('dragover', handleDragOver);
+        list.addEventListener('touchmove', handleDragOver, { passive: false });
+    });
+    /*
+    document.querySelectorAll('.list-item').forEach(item => {
         item.addEventListener('dragstart', function() {
             draggableItem = this;
             setTimeout(() => this.classList.add('dragging'), 0);
@@ -340,6 +352,7 @@ function createProcedureQuestion(quizContainer,questionText,currentQuestion){
             }
         }, { offset: Number.NEGATIVE_INFINITY }).element;
     }
+    */
     const submitButton = document.createElement('button');
     submitButton.id = 'submitButton';
     submitButton.textContent = 'Submit';
@@ -663,6 +676,70 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('startQuiz').addEventListener('click', startQuiz);
 });
 
+function handleDragStart(event) {
+    draggableItem = this;
+    setTimeout(() => this.classList.add('dragging'), 0);
+    event.dataTransfer.setData("text/plain", event.target.id); // For desktop compatibility
+}
+
+function handleDragEnd(event) {
+    draggableItem = null;
+    this.classList.remove('dragging');
+}
+
+function handleTouchStart(event) {
+    event.preventDefault();
+    draggableItem = this;
+    this.classList.add('dragging');
+}
+
+function handleTouchMove(event) {
+    event.preventDefault();
+    const touch = event.touches[0];
+    draggableItem.style.position = 'fixed'; // Use 'fixed' for position to work properly on mobile
+    draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
+    draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
+}
+
+function handleTouchEnd(event) {
+    event.preventDefault();
+    this.classList.remove('dragging');
+    draggableItem.style.position = '';
+    draggableItem.style.top = '';
+    draggableItem.style.left = '';
+    const afterElement = getDragAfterElement(event.target.closest('.list'), event.changedTouches[0].clientY);
+    if (afterElement == null) {
+        event.target.closest('.list').appendChild(draggableItem);
+    } else {
+        event.target.closest('.list').insertBefore(draggableItem, afterElement);
+    }
+    draggableItem = null;
+}
+
+function handleDragOver(event) {
+    event.preventDefault();
+    const afterElement = getDragAfterElement(event.target.closest('.list'), event.clientY || (event.touches && event.touches[0].clientY));
+    const draggable = document.querySelector('.dragging');
+    if (afterElement == null) {
+        event.target.closest('.list').appendChild(draggable);
+    } else {
+        event.target.closest('.list').insertBefore(draggable, afterElement);
+    }
+}
+
+function getDragAfterElement(list, y) {
+    const draggableElements = [...list.querySelectorAll('.list-item:not(.dragging)')];
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+        } else {
+            return closest;
+        }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
+/*
 // Add drag and drop helper functions
 function dragStart(event) {
     event.dataTransfer.setData("text/plain", event.target.id);
@@ -682,14 +759,4 @@ function drop(event) {
     var draggedElement = document.getElementById(data);
     event.target.appendChild(draggedElement);
 }
-// function drop(event) {
-//     event.preventDefault();
-//     const id = event.dataTransfer.getData("text/plain");
-//     const draggableElement = document.getElementById(id);
-//     const dropZone = event.target;
-//     //const list = document.getElementById('procedureSteps') || dropZone.parentNode;
-
-//     if (dropZone.tagName === 'LI') { // Ensures dropping only on list items
-//         list.insertBefore(draggableElement, dropZone.nextSibling);
-//     }
-// }
+*/
