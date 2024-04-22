@@ -455,11 +455,11 @@ function checkProcedureAnswer(user_answer, currentQuestion, element, leftList=nu
         items = rightList.querySelectorAll('li');
         items.forEach((item, index)=> {
             item.classList.add('correct');
-            listItem.draggable = false;
+            item.draggable = false;
         });
         items = leftList.querySelectorAll('li');
         items.forEach((item, index)=> {
-            listItem.draggable = false;
+            item.draggable = false;
         });
     } else {
         element.classList.add('incorrect'); // Add class to trigger incorrect answer animation
