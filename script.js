@@ -662,7 +662,8 @@ function handleTouchEnd(event) {
         return;
     }
     draggableItem.classList.remove('dragging');
-    draggableItem.style.position = 'static';
+    draggableItem.style.position = '';
+    draggableItem.style.zIndex = '';
     draggableItem.style.left = '';
     draggableItem.style.top = '';
 
@@ -702,7 +703,7 @@ function handleTouchMove(event) {
         return;
     }
     const touch = event.touches[0];
-    draggableItem.style.position = 'fixed'; // Use 'fixed' for position to work properly on mobile
+    draggableItem.style.position = ''; // Use 'fixed' for position to work properly on mobile
     //draggableItem.style.left = '${touch.clientX}px';
     //draggableItem.style.top = '${touch.clientY}px';
     draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
