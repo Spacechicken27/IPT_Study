@@ -685,6 +685,28 @@ function handleDragStart(event) {
 function handleDragEnd(event) {
     draggableItem = null;
     this.classList.remove('dragging');
+
+    draggableItem.style.position = '';
+    draggableItem.style.top = '';
+    draggableItem.style.left = '';
+
+    // Determine the list closest to the drop point
+    const touchX = event.changedTouches[0].clientX;
+    const touchY = event.changedTouches[0].clientY;
+    const potentialLists = document.elementsFromPoint(touchX, touchY);
+
+    // Find a list among potential drop targets
+    const dropList = potentialLists.find(element => element.classList.contains('list'));
+
+    if (dropList) {
+        const afterElement = getDragAfterElement(dropList, touchY);
+        if (afterElement == null) {
+            dropList.appendChild(draggableItem);
+        } else {
+            dropList.insertBefore(draggableItem, afterElement);
+        }
+    }
+    draggableItem = null;
 }
 
 function handleTouchStart(event) {
@@ -718,7 +740,8 @@ function handleTouchEnd(event) {
 
 function handleDragOver(event) {
     event.preventDefault();
-    const afterElement = getDragAfterElement(event.target.closest('.list'), event.clientY || (event.touches && event.touches[0].clientY));
+    const dragOverY = event.clientY || (event.touches && event.touches[0].clientY);
+    const afterElement = getDragAfterElement(event.target.closest('.list'), dragOverY);
     const draggable = document.querySelector('.dragging');
     if (afterElement == null) {
         event.target.closest('.list').appendChild(draggable);
