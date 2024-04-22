@@ -726,18 +726,35 @@ function handleTouchMove(event) {
 function handleTouchEnd(event) {
     event.preventDefault();
     this.classList.remove('dragging');
-    draggableItem.style.position = '';
-    draggableItem.style.top = '';
-    draggableItem.style.left = '';
-    const afterElement = getDragAfterElement(event.target.closest('.list'), event.changedTouches[0].clientY);
-    if (afterElement == null) {
-        event.target.closest('.list').appendChild(draggableItem);
-    } else {
-        event.target.closest('.list').insertBefore(draggableItem, afterElement);
+    draggableItem.style.position = 'static';
+    const touchX = event.changedTouches[0].clientX;
+    const touchY = event.changedTouches[0].clientY;
+
+    // Determine the closest list by touch point
+    const targetList = findClosestList(touchX, touchY);
+
+    if (targetList) {
+        const afterElement = getDragAfterElement(targetList, touchY);
+        if (afterElement == null) {
+            targetList.appendChild(draggableItem);
+        } else {
+            targetList.insertBefore(draggableItem, afterElement);
+        }
     }
     draggableItem = null;
 }
+function findClosestList(touchX, touchY) {
+    // Get the bounding rectangles of both lists
+    const leftListRect = document.getElementById('leftList').getBoundingClientRect();
+    const rightListRect = document.getElementById('rightList').getBoundingClientRect();
 
+    // Calculate the distance to each list
+    const distanceToLeftList = Math.abs(leftListRect.left + leftListRect.width / 2 - touchX) + Math.abs(leftListRect.top + leftListRect.height / 2 - touchY);
+    const distanceToRightList = Math.abs(rightListRect.left + rightListRect.width / 2 - touchX) + Math.abs(rightListRect.top + rightListRect.height / 2 - touchY);
+
+    // Return the closest list based on the minimum distance
+    return distanceToLeftList <= distanceToRightList ? document.getElementById('leftList') : document.getElementById('rightList');
+}
 function handleDragOver(event) {
     event.preventDefault();
     const dragOverY = event.clientY || (event.touches && event.touches[0].clientY);
