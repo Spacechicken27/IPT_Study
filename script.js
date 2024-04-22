@@ -306,7 +306,7 @@ function createProcedureQuestion(quizContainer,questionText,currentQuestion){
         item.addEventListener('dragstart', handleDragStart);
         item.addEventListener('dragend', handleDragEnd);
         item.addEventListener('touchstart', handleTouchStart, { passive: false });
-        item.addEventListener('touchmove', handleTouchMove, { passive: false });
+        //item.addEventListener('touchmove', handleTouchMove, { passive: false });
         item.addEventListener('touchend', handleTouchEnd, { passive: false });
     });
 
@@ -314,45 +314,7 @@ function createProcedureQuestion(quizContainer,questionText,currentQuestion){
         list.addEventListener('dragover', handleDragOver);
         list.addEventListener('touchmove', handleDragOver, { passive: false });
     });
-    /*
-    document.querySelectorAll('.list-item').forEach(item => {
-        item.addEventListener('dragstart', function() {
-            draggableItem = this;
-            setTimeout(() => this.classList.add('dragging'), 0);
-        });
 
-        item.addEventListener('dragend', function() {
-            draggableItem = null;
-            this.classList.remove('dragging');
-        });
-    });
-
-    document.querySelectorAll('.list').forEach(list => {
-        list.addEventListener('dragover', function(e) {
-            e.preventDefault();
-            const afterElement = getDragAfterElement(list, e.clientY);
-            const draggable = document.querySelector('.dragging');
-            if (afterElement == null) {
-                list.appendChild(draggable);
-            } else {
-                list.insertBefore(draggable, afterElement);
-            }
-        });
-    });
-    function getDragAfterElement(list, y) {
-        const draggableElements = [...list.querySelectorAll('.list-item:not(.dragging)')];
-
-        return draggableElements.reduce((closest, child) => {
-            const box = child.getBoundingClientRect();
-            const offset = y - box.top - box.height / 2;
-            if (offset < 0 && offset > closest.offset) {
-                return { offset: offset, element: child };
-            } else {
-                return closest;
-            }
-        }, { offset: Number.NEGATIVE_INFINITY }).element;
-    }
-    */
     const submitButton = document.createElement('button');
     submitButton.id = 'submitButton';
     submitButton.textContent = 'Submit';
@@ -682,6 +644,12 @@ function handleDragStart(event) {
     event.dataTransfer.setData("text/plain", event.target.id); // For desktop compatibility
 }
 
+function handleTouchStart(event) {
+    event.preventDefault();
+    draggableItem = this;
+    setTimeout(() => this.classList.add('dragging'), 0);
+}
+
 function handleDragEnd(event) {
     draggableItem = null;
     this.classList.remove('dragging');
@@ -709,19 +677,6 @@ function handleDragEnd(event) {
     draggableItem = null;
 }
 
-function handleTouchStart(event) {
-    event.preventDefault();
-    draggableItem = this;
-    this.classList.add('dragging');
-}
-
-function handleTouchMove(event) {
-    event.preventDefault();
-    const touch = event.touches[0];
-    draggableItem.style.position = 'fixed'; // Use 'fixed' for position to work properly on mobile
-    draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
-    draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
-}
 
 function handleTouchEnd(event) {
     event.preventDefault();
@@ -732,7 +687,7 @@ function handleTouchEnd(event) {
 
     // Determine the closest list by touch point
     const targetList = findClosestList(touchX, touchY);
-
+    const potentialLists = document.elementsFromPoint(touchX, touchY);
     if (targetList) {
         const afterElement = getDragAfterElement(targetList, touchY);
         if (afterElement == null) {
@@ -743,6 +698,27 @@ function handleTouchEnd(event) {
     }
     draggableItem = null;
 }
+
+function handleDragOver(event) {
+    event.preventDefault();
+    const dragOverY = event.clientY || (event.touches && event.touches[0].clientY);
+    const afterElement = getDragAfterElement(event.target.closest('.list'), dragOverY);
+    const draggable = document.querySelector('.dragging');
+    if (afterElement == null) {
+        event.target.closest('.list').appendChild(draggable);
+    } else {
+        event.target.closest('.list').insertBefore(draggable, afterElement);
+    }
+}
+
+function handleTouchMove(event) {
+    event.preventDefault();
+    const touch = event.touches[0];
+    draggableItem.style.position = 'fixed'; // Use 'fixed' for position to work properly on mobile
+    draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
+    draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
+}
+
 function findClosestList(touchX, touchY) {
     // Get the bounding rectangles of both lists
     const leftListRect = document.getElementById('leftList').getBoundingClientRect();
@@ -755,17 +731,7 @@ function findClosestList(touchX, touchY) {
     // Return the closest list based on the minimum distance
     return distanceToLeftList <= distanceToRightList ? document.getElementById('leftList') : document.getElementById('rightList');
 }
-function handleDragOver(event) {
-    event.preventDefault();
-    const dragOverY = event.clientY || (event.touches && event.touches[0].clientY);
-    const afterElement = getDragAfterElement(event.target.closest('.list'), dragOverY);
-    const draggable = document.querySelector('.dragging');
-    if (afterElement == null) {
-        event.target.closest('.list').appendChild(draggable);
-    } else {
-        event.target.closest('.list').insertBefore(draggable, afterElement);
-    }
-}
+
 
 function getDragAfterElement(list, y) {
     const draggableElements = [...list.querySelectorAll('.list-item:not(.dragging)')];
