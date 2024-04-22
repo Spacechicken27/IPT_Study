@@ -483,10 +483,10 @@ function checkProcedureAnswer(user_answer, currentQuestion, element, leftList=nu
         })
         LeftListTitle = document.createElement('li')
         //LeftListTitle.classList.add('list-item');
-        LeftListTitle.textContent = '\\/ Correct Procedure \\/';
-        LeftListTitle.draggable = false;
-        LeftListTitle.id = `correct-procedure-item`;
-        leftList.appendChild(LeftListTitle);
+        //LeftListTitle.textContent = '\\/ Correct Procedure \\/';
+        //LeftListTitle.draggable = false;
+        //LeftListTitle.id = `correct-procedure-item`;
+        //leftList.appendChild(LeftListTitle);
 
         correctAnswer.forEach((step, index)=>{
             const listItem = document.createElement('li');
@@ -494,6 +494,8 @@ function checkProcedureAnswer(user_answer, currentQuestion, element, leftList=nu
             listItem.textContent = step;
             listItem.draggable = false;
             listItem.id = `step-item-${index}`;
+            listItem.style.backgroundColor = '#28a745';
+            //listItem.classList.add('correct');
             leftList.appendChild(listItem);
         });
 
