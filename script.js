@@ -306,7 +306,7 @@ function createProcedureQuestion(quizContainer,questionText,currentQuestion){
         item.addEventListener('dragstart', handleDragStart);
         item.addEventListener('dragend', handleDragEnd);
         item.addEventListener('touchstart', handleTouchStart, { passive: false });
-        //item.addEventListener('touchmove', handleTouchMove, { passive: false });
+        item.addEventListener('touchmove', handleTouchMove, { passive: false });
         item.addEventListener('touchend', handleTouchEnd, { passive: false });
     });
 
@@ -653,41 +653,25 @@ function handleTouchStart(event) {
 function handleDragEnd(event) {
     draggableItem = null;
     this.classList.remove('dragging');
-
-    draggableItem.style.position = '';
-    draggableItem.style.top = '';
-    draggableItem.style.left = '';
-
-    // Determine the list closest to the drop point
-    const touchX = event.changedTouches[0].clientX;
-    const touchY = event.changedTouches[0].clientY;
-    const potentialLists = document.elementsFromPoint(touchX, touchY);
-
-    // Find a list among potential drop targets
-    const dropList = potentialLists.find(element => element.classList.contains('list'));
-
-    if (dropList) {
-        const afterElement = getDragAfterElement(dropList, touchY);
-        if (afterElement == null) {
-            dropList.appendChild(draggableItem);
-        } else {
-            dropList.insertBefore(draggableItem, afterElement);
-        }
-    }
-    draggableItem = null;
 }
-
 
 function handleTouchEnd(event) {
     event.preventDefault();
-    this.classList.remove('dragging');
+    if (!draggableItem) {
+        console.info("No draggable item in handleTouchEnd");
+        return;
+    }
+    draggableItem.classList.remove('dragging');
     draggableItem.style.position = 'static';
+    draggableItem.style.left = '';
+    draggableItem.style.top = '';
+
     const touchX = event.changedTouches[0].clientX;
     const touchY = event.changedTouches[0].clientY;
 
     // Determine the closest list by touch point
     const targetList = findClosestList(touchX, touchY);
-    const potentialLists = document.elementsFromPoint(touchX, touchY);
+    
     if (targetList) {
         const afterElement = getDragAfterElement(targetList, touchY);
         if (afterElement == null) {
@@ -713,10 +697,16 @@ function handleDragOver(event) {
 
 function handleTouchMove(event) {
     event.preventDefault();
+    if (!draggableItem) {
+        console.info("No draggable item in handleTouchMove");
+        return;
+    }
     const touch = event.touches[0];
     draggableItem.style.position = 'fixed'; // Use 'fixed' for position to work properly on mobile
-    draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
-    draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
+    draggableItem.style.left = '${touch.clientX}px';
+    draggableItem.style.top = '${touch.clientY}px';
+    //draggableItem.style.left = `${touch.pageX - draggableItem.offsetWidth / 2}px`;
+    //draggableItem.style.top = `${touch.pageY - draggableItem.offsetHeight / 2}px`;
 }
 
 function findClosestList(touchX, touchY) {
