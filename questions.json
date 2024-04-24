@@ -1211,14 +1211,14 @@
                 "type": "multiple_response",
                 "multiple_choice_prompt": "Select all that are in this image?",
                 "wrong_options": ["> 1000 ft Obstruction","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area", "Stadium","Marine Light","Space Launch Activity Area","Obstruction with High-Intensity Lights",  "Aerial Cable", "Lookout Tower", "Mountain Pass","Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Airspace floor > 700 ft","Class E Floor Differentiator","Low Altitude Airway","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)", "Military Training Route (MTR)"],
-                "answer":["Obstruction > 200 ft and < 1000 ft","Wind Turbine","Wind Turbine Farm","Group Obstruction","Power Transmission Line", "Class E Airspace floor > 1200 ft","Alert Area / Military Operations Area (MOA)","Isogonic Line","VFR Waypoint"]
+                "answer":["Obstruction > 200 ft and < 1000 ft","Wind Turbine","Wind Turbine Farm","Group Obstruction","Power Transmission Line", "Alert Area / Military Operations Area (MOA)","Isogonic Line","VFR Waypoint"]
               },
               {
                 "image": "/Images/VFR_Img/jl_bar_ranch.png",
                 "type": "multiple_response",
                 "multiple_choice_prompt": "Select all in this image?",
                 "wrong_options": ["> 1000 ft Obstruction","Wind Turbine","Wind Turbine Farm", "VFR Waypoint","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area", "Stadium","Marine Light","Space Launch Activity Area","Obstruction with High-Intensity Lights",  "Aerial Cable", "Lookout Tower", "Mountain Pass","Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Floor Differentiator","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR", "Air Defense Identification Zone (ADIZ)", "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)"],
-                "answer":["Obstruction > 200 ft and < 1000 ft","Group Obstruction","Power Transmission Line","Class E Airspace floor > 1200 ft","Alert Area / Military Operations Area (MOA)","Isogonic Line","Class E Airspace floor > 700 ft","Low Altitude Airway", "Military Training Route (MTR)"]
+                "answer":["Obstruction > 200 ft and < 1000 ft","Group Obstruction","Power Transmission Line","Alert Area / Military Operations Area (MOA)","Isogonic Line","Class E Airspace floor > 700 ft","Low Altitude Airway", "Military Training Route (MTR)"]
               },
               {
                 "image": "/Images/VFR_Img/ross_planes.png",
@@ -1239,7 +1239,7 @@
                 "type": "multiple_response",
                 "multiple_choice_prompt": "Select all in this image?",
                 "wrong_options": ["Group Obstruction","Class E Airspace floor > 700 ft","Alert Area / Military Operations Area (MOA)","> 1000 ft Obstruction","Wind Turbine","Wind Turbine Farm", "VFR Waypoint","Glider Operations","Hang Glider Activity","Ultralight Activity","Unmanned Aircraft Activity","Parachute Jumping Area", "Stadium","Marine Light","Space Launch Activity Area","Obstruction with High-Intensity Lights",  "Aerial Cable", "Lookout Tower", "Mountain Pass","Class A Airspace","Class B Airspace","Class C Airspace","Class D Airspace","Class E Surface Airspace","Class E Floor Differentiator","Mileage between NAVAIDs on Airway", "RNAV Waypoint", "Prohibited, Restriced, and Warning Areas", "Special Airport Traffic Area", "National Defense Airspace TFR",  "Mode C Veil", "National Security Area", "Terminal Radar Service Area (TRSA)"],
-                "answer":["Obstruction > 200 ft and < 1000 ft","Power Transmission Line","Class E Airspace floor > 1200 ft","Isogonic Line","Low Altitude Airway", "Military Training Route (MTR)","Air Defense Identification Zone (ADIZ)"]
+                "answer":["Obstruction > 200 ft and < 1000 ft","Power Transmission Line","Isogonic Line","Low Altitude Airway", "Military Training Route (MTR)","Air Defense Identification Zone (ADIZ)"]
               }
             ]
           }
