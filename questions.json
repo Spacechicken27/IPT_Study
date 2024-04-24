@@ -1244,6 +1244,228 @@
             ]
           }
         ]
+      },
+      {
+        "setName": "Other PPL Knowledge",
+        "categories": [
+          {
+            "categoryName": "FAR / AIM",
+            "questions": [
+              {
+                "image": "/Images/VFR_Img/abandoned.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Example Question. If you're seeing this, this category has not been made. (answer is 1)",
+                "wrong_options": ["1","1","1","1","1","1"],
+                "answer": "1"
+              }
+            ]
+          },
+          {
+            "categoryName": "im tired mom",
+            "questions": [
+              {
+                "image": "/Images/VFR_Img/abandoned.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Example Question. If you're seeing this, this category has not been made. (answer is 1)",
+                "wrong_options": ["1","1","1","1","1","1"],
+                "answer": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "setName": "Airspace & Weather",
+        "categories": [
+          {
+            "categoryName": "Classes of Airspace",
+            "questions": [
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What are the primary CATEGORIES of airspace used in the Unites States?",
+                "wrong_options": ["Controlled, Uncontrolled, Special Use, Other","Class A, B, C, D, & E Airspace","Alert, Prohibited, Restricted, and Military Operations Areas", "TFR, Parachute Jump, Military Training Routes, etc","Class G Airspace"],
+                "answer": "Regulatory and Non-Regulatory"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What are the TYPES of airspace used in the Unites States?",
+                "wrong_options": ["Regulatory and Non-Regulatory","Class A, B, C, D, & E Airspace","Alert, Prohibited, Restricted, and Military Operations Areas", "TFR, Parachute Jump, Military Training Routes, etc","Class G Airspace"],
+                "answer": "Controlled, Uncontrolled, Special Use, Other"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What are the CONTROLLED airspace used in the Unites States?",
+                "wrong_options": ["Regulatory and Non-Regulatory","Controlled, Uncontrolled, Special Use, Other","Alert, Prohibited, Restricted, and Military Operations Areas", "TFR, Parachute Jump, Military Training Routes, etc","Class G Airspace"],
+                "answer": "Class A, B, C, D, & E Airspace"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What are examples of SPECIAL USE airspace used in the Unites States?",
+                "wrong_options": ["Regulatory and Non-Regulatory","Controlled, Uncontrolled, Special Use, Other","Class A, B, C, D, & E Airspace", "TFR, Parachute Jump, Military Training Routes, etc"],
+                "answer": "Alert, Prohibited, Restricted, and Military Operations Areas"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What are other designated airspace that is not ICAO airspace classes NOR special use used in the Unites States?",
+                "wrong_options": ["Regulatory and Non-Regulatory","Controlled, Uncontrolled, Special Use, Other","Class A, B, C, D, & E Airspace","Alert, Prohibited, Restricted, and Military Operations Areas","Class G Airspace"],
+                "answer": "TFR, Parachute Jump, Military Training Routes, etc"
+              }
+
+            ]
+          },
+          {
+            "categoryName": "VFR Flight Visibity & Cloud Clearance",
+            "questions": [
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>E</strong> Airspace <strong>ABOVE 10000ft</strong> MSL,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["3 Statute Miles","1 Statute Mile","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "5 Statute Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>E</strong> Airspace <strong>BELOW 10000ft</strong> MSL,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["5 Statute Miles","1 Statute Mile","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "3 Statute Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>B</strong> Airspace,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["5 Statute Miles","1 Statute Mile","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "3 Statute Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>C</strong> Airspace,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["5 Statute Miles","1 Statute Mile","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "3 Statute Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>D</strong> Airspace,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["5 Statute Miles","1 Statute Mile","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "3 Statute Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>G</strong> Airspace during the <strong>DAY</strong>,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["5 Statute Miles","3 Statute Miles","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "1 Statute Mile"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>G</strong> Airspace during the <strong>NIGHT</strong>,<br> your minimum <strong>FLIGHT VISIBILITY</strong> is:",
+                "wrong_options": ["5 Statute Miles","1 Statute Mile","10 Statute Miles", "1000 feet", "Clear of Clouds"],
+                "answer": "3 Statute Mile"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>E</strong> Airspace <strong>ABOVE 10000ft</strong> MSL,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": [ "500ft Below, 1000ft Above, 2000 ft Horizontal","Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "1000ft Below, 1000ft Above, 1 SM Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>E</strong> Airspace <strong>BELOW 10000ft</strong> MSL,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "500ft Below, 1000ft Above, 2000 ft Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>B</strong> Airspace,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "500ft Below, 1000ft Above, 2000 ft Horizontal","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "Clear of Clouds"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>C</strong> Airspace,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "500ft Below, 1000ft Above, 2000 ft Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>D</strong> Airspace,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "500ft Below, 1000ft Above, 2000 ft Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>G</strong> Airspace <strong>ABOVE 1200ft AGL</strong> at <strong>NIGHT</strong>,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "500ft Below, 1000ft Above, 2000 ft Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>G</strong> Airspace <strong>ABOVE 1200ft AGL</strong> during the <strong>DAY</strong>,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "500ft Below, 1000ft Above, 2000 ft Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>G</strong> Airspace <strong>BELOW 1200ft AGL</strong> during the <strong>NIGHT</strong>,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["1000ft Below, 1000ft Above, 1 SM Horizontal", "Clear of Clouds","1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "500ft Below, 1000ft Above, 2000 ft Horizontal"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "In Class <strong>G</strong> Airspace <strong>BELOW 1200ft AGL</strong> during the <strong>DAY</strong>,<br> your minimum <strong>CLOUD CLEARANCE</strong> is:",
+                "wrong_options": ["500ft Below, 1000ft Above, 2000 ft Horizontal","1000ft Below, 1000ft Above, 1 SM Horizontal", "1 SM Below, 1 SM Above, 1 SM Horizontal", "1000ft Below, 1000ft Above, 1000 ft Horizontal", "500ft Below, 1000ft Above, 1 SM Horizontal","500ft Below, 1000ft Above, 2 SM Horizontal"],
+                "answer": "Clear of Clouds"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "setName": "Multi-Engine Knowledge",
+        "categories": [
+          {
+            "categoryName": "Airport Symbols",
+            "questions": [
+              {
+                "image": "/Images/VFR_Img/abandoned.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "answer": "Non-Hard Surfaced"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "setName": "IFR Sectionals & Charts",
+        "categories": [
+          {
+            "categoryName": "Airport Symbols",
+            "questions": [
+              {
+                "image": "/Images/VFR_Img/abandoned.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "answer": "Non-Hard Surfaced"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "setName": "IFR Knowledge",
+        "categories": [
+          {
+            "categoryName": "Airport Symbols",
+            "questions": [
+              {
+                "image": "/Images/VFR_Img/abandoned.png",
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
+                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
+                "answer": "Non-Hard Surfaced"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

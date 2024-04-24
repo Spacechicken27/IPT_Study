@@ -152,7 +152,8 @@ function getRandomElements(array, count) {
 }
 
 function createMultipleChoiceQuestion(quizContainer,questionText,currentQuestion){
-    questionText.textContent = currentQuestion.multiple_choice_prompt;
+    console.log(currentQuestion.multiple_choice_prompt);
+    questionText.innerHTML = currentQuestion.multiple_choice_prompt;
     quizContainer.appendChild(questionText);
 
     if (currentQuestion.image){
