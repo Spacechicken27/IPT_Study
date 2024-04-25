@@ -214,7 +214,7 @@ function createFillInTheBlankQuestion(quizContainer,currentQuestion){
 }
 
 function createMultipleResponseQuestion(quizContainer,questionText,currentQuestion){
-    questionText.textContent = currentQuestion.multiple_choice_prompt;
+    questionText.innerHTML = currentQuestion.multiple_choice_prompt;
     quizContainer.appendChild(questionText);
 
     if (currentQuestion.image){
@@ -514,9 +514,9 @@ function updateScore(increase){
             score--
         }
     }
-    document.getElementById("score").textContent = `Score: ${score}`; // Assuming you have an element to display the score
+    document.getElementById("score").textContent = `Correct: ${score}`; // Assuming you have an element to display the score
     document.getElementById("questionNumber").textContent = `Question: ${currentQuestionIndex}/${totalQuestions}`
-    document.getElementById("scorePercent").textContent = `Correct: ${(score/currentQuestionIndex) *100}`
+    document.getElementById("scorePercent").textContent = `Score: ${((score / currentQuestionIndex) * 100).toFixed(2)}%`;
 }
 
 function checkMultipleResponseAnswer(correct_answers){

@@ -1278,7 +1278,7 @@
         "setName": "Airspace & Weather",
         "categories": [
           {
-            "categoryName": "Classes of Airspace",
+            "categoryName": "Definition of airspace types/categories",
             "questions": [
               {
                 "type": "multiple_choice",
@@ -1312,6 +1312,390 @@
               }
 
             ]
+          },
+          {
+            "categoryName": "ICAO Airspace Class",
+            "questions": [
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>Class A</strong> Airspace <strong>begins</strong> at what elevation (minimum)?",
+                "wrong_options": ["18,000 ft AGL,","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 600", "60,000 ft MSL", "60,000 ft AGL"],
+                "answer": "18,000 ft MSL"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>Class A</strong> Airspace <strong>ends</strong> at what elevation (maximum)?",
+                "wrong_options": ["18,000 ft AGL,","18,000 ft MSL","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 500", "60,000 ft AGL"],
+                "answer": "60,000 ft MSL"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>Class A</strong> Airspace permits VFR Flight?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "All pilots in <strong>Class A</strong> airspace use which altimeter setting?",
+                "wrong_options": ["29.29 Hg","92.92 Hg","92.29 Hg","They use the altimeter reading of the Airport they took off from"],
+                "answer": "29.92 Hg"
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all items needed to enter <strong>Class A</strong> Airspace:",
+                "wrong_options": ["ADSB-In"],
+                "answer": ["Clearance From ATC", "Two-Way Radio","Mode-C Transponder","ADS-B Out", "DME or GPS (above FL240)"]
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed Limit in <strong>Class A</strong> Airspace?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "200 Kts"],
+                "answer": "Mach 1"
+              },
+
+
+
+
+              
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> what is the ceiling for <stong>Class B</strong> Airspace?",
+                "wrong_options": ["18,000 ft MGL","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 600", "60,000 ft MSL", "60,000 ft AGL", "5000 ft AGL"],
+                "answer": "10,000 ft MSL"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "How far away does the Mode-C Veil extend outside <strong>Class B</strong> Airspace?",
+                "wrong_options": ["4-5 Statute Miles","30 Statute Miles","10 Nautical Miles","10 Statute Miles","4-5 nautical Miles", "1000 ft past Class B", "1 NM past Class B", "1 SM past Class B"],
+                "answer": "30 Nautical Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>Class B</strong> Airspace permits VFR Flight?",
+                "wrong_options": ["FALSE"],
+                "answer": "TRUE"
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all items needed to enter the <strong>Class B Mode C Veil</strong>:",
+                "wrong_options": ["ADSB-In","Two-Way Radio","DME or GPS"],
+                "answer": [ "Mode-C Transponder","ADS-B Out"]
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all items needed to enter the <strong>Class B</strong> Airspace:",
+                "wrong_options": ["ADSB-In","DME or GPS"],
+                "answer": ["Clearance From ATC","Mode-C Transponder","ADS-B Out","Two-Way Radio"]
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed Limit in <strong>Class C</strong> Airspace?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7", "200 Kts","Mach 1"],
+                "answer": "250 Kts"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed Limit <strong>BELOW Class B</strong> Airspace?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
+                "answer": "200 Kts"
+              },
+
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> what is the ceiling for <stong>Class C</strong> Airspace?",
+                "wrong_options": ["2500 ft AGL","4000 ft MSL","5000 ft AGL","10,000 ft MSL","18,000 ft MGL","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 600", "60,000 ft MSL", "60,000 ft AGL", "5000 ft MGL"],
+                "answer": "4000 ft AGL"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> How far away does the outer shelf of <strong>Class C</strong> Airspace extend?",
+                "wrong_options": ["30 Nautical Miles","30 Statute Miles","10 Statute Miles","4-5 Statute Miles","4-5 Nautical Miles"],
+                "answer": "10 Nautical Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "ATC Clearance is required to enter <strong>Class C</strong> Airspace?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Two Way Radio Communication is required to enter <strong>Class C</strong> Airspace?",
+                "wrong_options": ["FALSE"],
+                "answer": "TRUE"
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all items needed to <strong>fly INTO </strong> any <strong>Class C</strong> airspace:",
+                "wrong_options": ["ADSB-In","DME or GPS"],
+                "answer": ["Two-Way Radio", "Mode-C Transponder","ADS-B Out"]
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all items needed to <strong>fly OVER </strong> any <strong>Class C</strong> airspace:",
+                "wrong_options": ["ADSB-In","DME or GPS","Two-Way Radio"],
+                "answer": ["Mode-C Transponder","ADS-B Out"]
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed limit under a <strong>Class C</strong> Airport (>4NM away)?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7", "200 Kts","Mach 1"],
+                "answer": "250 Kts"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed limit within a 4 NM radius of a <strong>Class C</strong> Airport?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
+                "answer": "200 Kts"
+              },
+
+
+
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> what is the ceiling for <stong>Class D</strong> Airspace?",
+                "wrong_options": ["4000 ft AGL","4000 ft MSL","5000 ft AGL","10,000 ft MSL","18,000 ft MGL","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 600", "60,000 ft MSL", "60,000 ft AGL", "5000 ft MGL"],
+                "answer": "2500 ft AGL"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> How far away does the outer shelf of <strong>Class D</strong> Airspace extend?",
+                "wrong_options": ["30 Nautical Miles","30 Statute Miles","10 Nautical Miles","10 Statute Miles","4-5 Statute Miles"],
+                "answer": "4-5 Nautical Miles"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "ATC Clearance is required to enter <strong>Class D</strong> Airspace?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Two Way Radio Communication is required to enter <strong>Class D</strong> Airspace?",
+                "wrong_options": ["FALSE"],
+                "answer": "TRUE"
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Select all items needed to <strong>fly INTO </strong> any <strong>Class C</strong> airspace:",
+                "wrong_options": ["ADSB-In","DME or GPS","Mode-C Transponder", "ADS-B Out"],
+                "answer": ["Two-Way Radio"]
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed limit inside <strong>Class D</strong> Airspace?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
+                "answer": "200 Kts"
+              },
+
+
+
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> what is the ceiling for <stong>Class E</strong> Airspace?",
+                "wrong_options": ["4000 ft AGL","4000 ft MSL","5000 ft AGL","10,000 ft MSL","18,000 ft MGL","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 600", "60,000 ft MSL", "60,000 ft AGL", "5000 ft MGL"],
+                "answer": "2500 ft AGL"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "ATC Communications are required flying inside <strong>Class E</strong> Airspace?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Two Way Radio Communication is required to enter <strong>Class E</strong> Airspace?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What is the speed limit inside <strong>Class E</strong> Airspace below 10,000 ft MSL?",
+                "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
+                "answer": "250 Kts"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What airspace extends the highest?",
+                "wrong_options": ["Class A Airspace", "Class B Airspace", "Class C Airspace","Class D Airspace", "Class G Airspace"],
+                "answer": "Class E Airspace"
+              }
+            ]
+          },
+          {
+            "categoryName": "Special Use & Other Types of Airspace",
+            "questions": [
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from ever flying in <strong>Restricted Areas</strong>?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>Restricted Area</strong>?",
+                "wrong_options": ["Enter: they're never Active","Enter: I wanna see an F-16","Dont Enter: You can never enter", "Trust the Active hours on the 3 year old sectional"],
+                "answer": "Call Controlling Agency to ensure area is inactive"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why are <strong>Restricted Areas</strong> restricted?",
+                "wrong_options": ["They are hiding the aliens from us", "They aren't restricted"],
+                "answer": "They contain hazardous activities like artillery firing and guided missile launches"
+              },
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from ever flying in <strong>Prohibited Areas</strong>?",
+                "wrong_options": ["FALSE"],
+                "answer": "TRUE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>Prohibited Area</strong>?",
+                "wrong_options": ["Enter: they're never Active","Enter: I wanna see an F-16","Call Controlling Agency to ensure area is inactive", "Trust the Active hours on the 3 year old sectional"],
+                "answer": "Dont Enter: You can never enter"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why are <strong>Prohibited Areas</strong> prohibited?",
+                "wrong_options": ["They are hiding the aliens from us", "Restriced Areas aren't restricted"],
+                "answer": "They contain specially protected areas like Nuclear Weapons Facilities"
+              },
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from ever flying in <strong>Warning Areas</strong>?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "<strong>IN GENERAL </strong> where are <stong>Warning Areas</strong>?",
+                "wrong_options": ["3 Statute Miles off US Coastline","5 Statute Miles off US Coastline","5 Nautical Miles off US Coastline", "Over military training sites"],
+                "answer": "3 Nautical Miles off US Coastline"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>Warning Area</strong>?",
+                "wrong_options": ["Enter: they're never Active","Enter: I wanna see an F-16","Call Controlling Agency to ensure area is inactive", "Trust the Active hours on the 3 year old sectional"],
+                "answer": "Enter with Caution: US Gov't doesnt have juristiction over open waters"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why are <strong>Warning Areas</strong> Warning us?",
+                "wrong_options": ["They contain specially protected areas like Nuclear Weapons Facilities", "They are hiding the aliens from us", "Restriced Areas aren't restricted"],
+                "answer": "FAA is saying good luck, not their fault if you die outside US Gov Jurisdiction"
+              },
+
+
+
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from ever flying in <strong>Military Operating Areas</strong>(MOAs)?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>Military Operating Area</strong>?",
+                "wrong_options": ["Enter: they're never Active","Enter: I wanna see an F-16","Dont Enter: You can never enter", "Trust the Active hours on the 3 year old sectional"],
+                "answer": "Call Controlling Agency to ensure area is inactive"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why do <strong>Military Operating Areas</strong> exist?",
+                "wrong_options": ["They are hiding the aliens from us", "They dont: just like wyoming"],
+                "answer": "We needed a place for fast bois to go > 250 kts"
+              },
+
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from ever flying in <strong>Alert Areas</strong>?",
+                "wrong_options": ["TRUE"],
+                "answer": "FALSE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>Alert Area</strong>?",
+                "wrong_options": ["Ask nearest ATC","Call Controlling Agency to ensure area is inactive","Dont Enter: You can never enter"],
+                "answer": "Enter: there are no extra restrictions"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why do <strong>Alert Areas</strong> exist?",
+                "wrong_options": ["They are hiding the aliens from us", "They dont: just like wyoming","We needed a place for fast bois to go > 250 kts"],
+                "answer": "To alert pilots of areas with high volume of aerial activity"
+              },
+
+
+
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from flying in <strong>National Security Areas</strong>?",
+                "wrong_options": ["TRUE","FALSE"],
+                "answer": "SOMETIMES"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>National Security Areas</strong>?",
+                "wrong_options": ["Enter: there are no extra restrictions","Ask nearest ATC","Call Controlling Agency to ensure area is inactive","Dont Enter: You can never enter"],
+                "answer":  "Check NOTAMs and contact ATC before flying through"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why do <strong>National Security Areas</strong> exist?",
+                "wrong_options": ["To alert pilots of areas with high volume of aerial activity","They are hiding the aliens from us", "They dont: just like wyoming","We needed a place for fast bois to go > 250 kts"],
+                "answer": "To protect important ground facilities"
+              },
+
+
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "FAA prohibits pilots from flying in <strong>Temporary Flight Restrictions</strong> areas?",
+                "wrong_options": ["FALSE"],
+                "answer": "TRUE"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "What should you do if you want to enter a <strong>Temporary Flight Restriction</strong> area?",
+                "wrong_options": ["Check NOTAMs and contact ATC before flying through","Enter: there are no extra restrictions","Ask nearest ATC","Call Controlling Agency to ensure area is inactive","Dont Enter: You can never enter"],
+                "answer":  "Only enter if you have prior FAA approval (usually only for planes in the airshows"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "Why do <strong>Temporary Flight Restriction</strong> exist?",
+                "wrong_options": ["To protect important ground facilities","To alert pilots of areas with high volume of aerial activity","They are hiding the aliens from us", "They dont: just like wyoming","We needed a place for fast bois to go > 250 kts"],
+                "answer": "To protect important public figures, Space agency operations, Disaster Relief Aircraft, or Airshows"
+              },
+              {
+                "type": "multiple_choice",
+                "multiple_choice_prompt": "How do I know if a <strong>Temporary Flight Restriction</strong> exists?",
+                "wrong_options": ["They are listed on Sectionals", "You can only get them by calling up ATC before flight", "We all just guess and hope we dont hit one"],
+                "answer": "It is the pilot's responsibility to check NOTAMs to research any TFRs along route before takeoff"
+              }
+
+
+            ]  
           },
           {
             "categoryName": "VFR Flight Visibity & Cloud Clearance",
@@ -1420,14 +1804,14 @@
         "setName": "Multi-Engine Knowledge",
         "categories": [
           {
-            "categoryName": "Airport Symbols",
+            "categoryName": "None",
             "questions": [
               {
                 "image": "/Images/VFR_Img/abandoned.png",
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
-                "answer": "Non-Hard Surfaced"
+                "multiple_choice_prompt": "If you're seeing this the category hasnt been created yet. Pick any Number!?",
+                "wrong_options": ["1","1","1","1"],
+                "answer": "1"
               }
             ]
           }
@@ -1437,14 +1821,14 @@
         "setName": "IFR Sectionals & Charts",
         "categories": [
           {
-            "categoryName": "Airport Symbols",
+            "categoryName": "None",
             "questions": [
               {
                 "image": "/Images/VFR_Img/abandoned.png",
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
-                "answer": "Non-Hard Surfaced"
+                "multiple_choice_prompt": "If you're seeing this the category hasnt been created yet. Pick any Number!?",
+                "wrong_options": ["1","1","1","1"],
+                "answer": "1"
               }
             ]
           }
@@ -1454,14 +1838,14 @@
         "setName": "IFR Knowledge",
         "categories": [
           {
-            "categoryName": "Airport Symbols",
+            "categoryName": "None",
             "questions": [
               {
                 "image": "/Images/VFR_Img/abandoned.png",
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "Airport Symbols -- What does this symbol indicate?",
-                "wrong_options": ["Seaplane Base","Hard Surfaced 1500-8069 ft", "Hard Surfaced > 8069 ft", "VOR | VOR-DME | DME | VORTAC", "Private","Non-Hard Surface Military","Heliport","Unverified","Abandoned","Ultralight Flight Park","Fuel Availability","Rotating Beacon"],
-                "answer": "Non-Hard Surfaced"
+                "multiple_choice_prompt": "If you're seeing this the category hasnt been created yet. Pick any Number!?",
+                "wrong_options": ["1","1","1","1"],
+                "answer": "1"
               }
             ]
           }
