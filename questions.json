@@ -1344,7 +1344,7 @@
                 "type": "multiple_response",
                 "multiple_choice_prompt": "Select all items needed to enter <strong>Class A</strong> Airspace:",
                 "wrong_options": ["ADSB-In"],
-                "answer": ["Clearance From ATC", "Two-Way Radio","Mode-C Transponder","ADS-B Out", "DME or GPS (above FL240)"]
+                "answer": ["IFR Clearance", "Two-Way Radio","Mode-C Transponder","ADS-B Out", "DME or GPS (above FL240)"]
               },
               {
                 "type": "multiple_choice",
@@ -1453,7 +1453,7 @@
               },
               {
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "What is the speed limit under a <strong>Class C</strong> Airport (>4NM away)?",
+                "multiple_choice_prompt": "What is the speed limit under <strong>Class C</strong> Airspace (>4NM away)?",
                 "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7", "200 Kts","Mach 1"],
                 "answer": "250 Kts"
               },
@@ -1471,7 +1471,7 @@
               },
               {
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "What is the speed limit within a 4 NM radius of a <strong>Class C</strong> Airport?",
+                "multiple_choice_prompt": "What is the speed limit within a <strong>4 NM</strong> radius, and <strong>< 2500 AGL</strong> of a <strong>Class C</strong> Airport?",
                 "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
                 "answer": "200 Kts"
               },
@@ -1519,7 +1519,7 @@
               },
               {
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "What is the speed limit inside <strong>Class D</strong> Airspace?",
+                "multiple_choice_prompt": "What is the speed limit inside <strong>Class D</strong> Airspace,<br> (Aka, within a <strong>4 NM</strong> radius of class D and <strong>< 2500 AGL</strong>)?",
                 "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
                 "answer": "200 Kts"
               },
@@ -1531,9 +1531,9 @@
 
               {
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "<strong>IN GENERAL </strong> what is the ceiling for <stong>Class E</strong> Airspace?",
+                "multiple_choice_prompt": "<strong>IN GENERAL</strong>, for our purposes, what is the ceiling for <stong>Class E</strong> Airspace?",
                 "wrong_options": ["4000 ft AGL","4000 ft MSL","5000 ft AGL","10,000 ft MSL","18,000 ft MGL","FL 200", "20,000 ft MSL", "20,000 ft AGL", "FL 600", "60,000 ft MSL", "60,000 ft AGL", "5000 ft MGL"],
-                "answer": "2500 ft AGL"
+                "answer": "17,999 ft MSL"
               },
               {
                 "type": "multiple_choice",
@@ -1555,7 +1555,7 @@
               },
               {
                 "type": "multiple_choice",
-                "multiple_choice_prompt": "What airspace extends the highest?",
+                "multiple_choice_prompt": "A SR-71 pilot goes above FL600/60,000 ft MSL, what airspace is the pilot in now?",
                 "wrong_options": ["Class A Airspace", "Class B Airspace", "Class C Airspace","Class D Airspace", "Class G Airspace"],
                 "answer": "Class E Airspace"
               }
