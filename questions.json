@@ -1388,6 +1388,18 @@
                 "answer": ["Clearance From ATC","Mode-C Transponder","ADS-B Out","Two-Way Radio"]
               },
               {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Inside <strong>Class B</strong> Airspace,<br>VFR aircraft are seperated from VFR/IFR aircraft weighing <strong><= 19000 lbs</strong> by a mimimum of",
+                "wrong_options": ["1.5 Mi Lateral Separation","DME or GPS"],
+                "answer": ["Target resolution","500 feet vertical separation","Visual separation"]
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Inside <strong>Class B</strong> Airspace,<br>VFR aircraft are seperated from VFR/IFR aircraft weighing <strong>> 19000 lbs</strong> by a mimimum of",
+                "wrong_options": ["DME or GPS","Target resolution"],
+                "answer": ["1.5 Mi Lateral Separation","500 feet vertical separation","Visual separation"]
+              },
+              {
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What is the speed Limit in <strong>Class C</strong> Airspace?",
                 "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7", "200 Kts","Mach 1"],
@@ -1446,6 +1458,18 @@
                 "answer": "250 Kts"
               },
               {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Inside <strong>Class C</strong> Airspace,<br>VFR aircraft are seperated from IFR aircraft by a mimimum of",
+                "wrong_options": ["DME or GPS","1.5 Mi Lateral Separation"],
+                "answer": ["500 feet vertical separation","Visual separation","Target resolution"]
+              },
+              {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Inside <strong>Class C</strong> Airspace, Wake turbulence separation will be provided to aircraft operating:",
+                "wrong_options": ["All aircraft following a large aircraft on final approach","Small aircraft operating ahead and less than 500 feet below B757 aircraft"],
+                "answer": ["Any Aircraft Behind and less than 1,000 feet below super or heavy aircraft","To small aircraft operating behind and less than 500 feet below B757 aircraft","To small aircraft following a large aircraft on final approach"]
+              },
+              {
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "What is the speed limit within a 4 NM radius of a <strong>Class C</strong> Airport?",
                 "wrong_options": ["Mach 0.95", "Mach 0.9", "Mach 0.7","250 Kts", "Mach 1"],
@@ -1476,6 +1500,12 @@
                 "answer": "FALSE"
               },
               {
+                "type": "multiple_response",
+                "multiple_choice_prompt": "Which airspaces can a part-time <strong>Class D</strong> Airspace change to?",
+                "wrong_options": ["Class A Airspace", "Class B Airspace", "Class C Airspace","Class D Airspace"],
+                "answer": ["Class E Airspace", "Class G Airspace"]
+              },
+              {
                 "type": "multiple_choice",
                 "multiple_choice_prompt": "Two Way Radio Communication is required to enter <strong>Class D</strong> Airspace?",
                 "wrong_options": ["FALSE"],
@@ -1483,7 +1513,7 @@
               },
               {
                 "type": "multiple_response",
-                "multiple_choice_prompt": "Select all items needed to <strong>fly INTO </strong> any <strong>Class C</strong> airspace:",
+                "multiple_choice_prompt": "Select all items needed to <strong>fly INTO </strong> any <strong>Class D</strong> airspace:",
                 "wrong_options": ["ADSB-In","DME or GPS","Mode-C Transponder", "ADS-B Out"],
                 "answer": ["Two-Way Radio"]
               },
